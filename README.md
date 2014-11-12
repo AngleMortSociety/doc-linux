@@ -7,8 +7,8 @@ Ce document est sous licence [**Creative Commons**](http://creativecommons.org/l
 
 # Contributeurs
 
-- kCell					: écriture, documentation, tests
-- Jean-Baptiste Lacour	: écriture, relecture, correction
+- kCell									: écriture, documentation, tests
+- Jean-Baptiste Lacour, alias Moonjb	: écriture, relecture, correction
 
 # A faire
 

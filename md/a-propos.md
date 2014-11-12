@@ -37,7 +37,7 @@ Voici les quelques liens qui ont été sources d'inspiration et d'informations d
 - [Wikipedia](http://fr.wikipedia.org/ "Wikipedia - Site officiel")
 - [Linux certif](http://www.linuxcertif.com "Linux Certif")
 
-### Les contributeurs de ce document
+### Les contributeurs de la documentation
 
-- kCell					: écriture, documentation, tests
-- Jean-Baptiste Lacour	: écriture, relecture, correction
+- kCell									: écriture, documentation, tests
+- Jean-Baptiste Lacour, alias Moonjb	: écriture, relecture, correction
