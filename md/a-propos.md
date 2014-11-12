@@ -39,5 +39,5 @@ Voici les quelques liens qui ont été sources d'inspiration et d'informations d
 
 ### Les contributeurs de ce document
 
-- kCell		: écriture, documentation
-- Moonjb	: relecture, correction
+- kCell					: écriture, documentation, tests
+- Jean-Baptiste Lacour	: écriture, relecture, correction

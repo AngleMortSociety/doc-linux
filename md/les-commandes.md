@@ -1092,7 +1092,7 @@ Remonte l'invite de commande tout en haut du Terminal, nettoie l'écran de toute
 clear
 ```
 
-Pas d'options pour cette commande.
+Pas d'option pour cette commande.
 
 ### env
 ((Environment))
@@ -2307,4 +2307,4 @@ Cette commande peut être utilisée pour recharger un fichier tel que le `.bashr
 source .bashrc
 ```
 
-Pas d'options pour cette commande.
+Pas d'option pour cette commande.
