@@ -100,7 +100,7 @@ Il est parfois nécessaire d'utiliser des codes (ISO ou HTML) afin d'accéder à
 | ]				| `&#93;`	| &#93;		| 			| 			 | <kbd>ALT</kbd> + 093		| Crochet fermant (ou droit).										|
 | ^				| `&#94;`	| &#94;		| 			| 			 | <kbd>ALT</kbd> + 094		| Caret ou chapeau.													|
 | _				| `&#95;`	| &#95;		| 			| 			 | <kbd>ALT</kbd> + 095		| Underscore ou caractère de soulignement.							|
-| `				| `&#96;`	| &#96;		| 			| 			 | <kbd>ALT</kbd> + 096		| Quote inverse, guillemet inverse ou accent grave.					|
+| \`			| `&#96;`	| &#96;		| 			| 			 | <kbd>ALT</kbd> + 096		| Quote inverse, guillemet inverse ou accent grave.					|
 | a				| `&#97;`	| &#97;		| 			| 			 | <kbd>ALT</kbd> + 097		| Lettre minuscule a.												|
 | b				| `&#98;`	| &#98;		| 			| 			 | <kbd>ALT</kbd> + 098		| Lettre minuscule b.												|
 | c				| `&#99;`	| &#99;		| 			| 			 | <kbd>ALT</kbd> + 099		| Lettre minuscule c.												|
