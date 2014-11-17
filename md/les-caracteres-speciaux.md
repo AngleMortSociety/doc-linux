@@ -42,14 +42,14 @@ Il est parfois nécessaire d'utiliser des codes (ISO ou HTML) afin d'accéder à
 | #				| `&#35;`	| &#35;		| 			| 			 | <kbd>ALT</kbd> + 035		| Dièse.															|
 | $				| `&#36;`	| &#36;		| 			| 			 | <kbd>ALT</kbd> + 036		| Symbole monétaire du dollar.										|
 | %				| `&#37;`	| &#37;		| 			| 			 | <kbd>ALT</kbd> + 037		| Pour cent.														|
-| &				| `&#38;`	| &#38;		| `&amp;`	| &amp;		 | <kbd>ALT</kbd> + 038		| Esperluette ou "ET" commercial.									|
+| &				| `&#38;`	| &#38;		| `&amp;`	| &amp;		 | <kbd>ALT</kbd> + 038		| Ésperluette ou "ET" commercial.									|
 | '				| `&#39;`	| &#39;		| 			| 			 | <kbd>ALT</kbd> + 039		| Quote, guillemet simple ou apostrophe.							|
 | (				| `&#40;`	| &#40;		| 			| 			 | <kbd>ALT</kbd> + 040		| Parenthèse ouvrante.												|
 | )				| `&#41;`	| &#41;		| 			| 			 | <kbd>ALT</kbd> + 041		| Parenthèse fermante.												|
-| *				| `&#42;`	| &#42;		| 			| 			 | <kbd>ALT</kbd> + 042		| Etoile ou astérisque.												|
+| *				| `&#42;`	| &#42;		| 			| 			 | <kbd>ALT</kbd> + 042		| Étoile ou astérisque.												|
 | +				| `&#43;`	| &#43;		| 			| 			 | <kbd>ALT</kbd> + 043		| Opérateur mathématique plus.										|
 | ,				| `&#44;`	| &#44;		| 			| 			 | <kbd>ALT</kbd> + 044		| Virgule.															|
-| -				| `&#45;`	| &#45;		| 			| 			 | <kbd>ALT</kbd> + 045		| Opérateur mathématique moins.										|
+| -				| `&#45;`	| &#45;		| 			| 			 | <kbd>ALT</kbd> + 045		| Opérateur mathématique moins ou tiret.							|
 | .				| `&#46;`	| &#46;		| 			| 			 | <kbd>ALT</kbd> + 046		| Point.															|
 | /				| `&#47;`	| &#47;		| 			| 			 | <kbd>ALT</kbd> + 047		| Slash, barre oblique ou opérateur mathématique de division.		|
 | 0				| `&#48;`	| &#48;		| 			| 			 | <kbd>ALT</kbd> + 048		| Chiffre 0.														|
