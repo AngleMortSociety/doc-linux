@@ -6,7 +6,7 @@ Nous allons passer en revue les commandes les plus courantes qui constituent un 
 ## Commandes d'informations
 
 ### alias
-[[Primitive du shell]]
+{{Primitive du shell}}
 
 Afficher l'alias demandé dans le Terminal, s'il existe :
 
@@ -156,7 +156,7 @@ groups utilisateur
 ```
 
 ### help
-[[Primitive du shell]]
+{{Primitive du shell}}
 
 Affiche l'aide et liste toutes les *primitives du shell*.
 
@@ -323,7 +323,7 @@ man -L en cp
 ```
 
 ### pwd
-[[Primitive du shell]] ((Print working directory))
+{{Primitive du shell}} ((Print working directory))
 
 Affiche le chemin absolu du répertoire courant.
 
@@ -363,7 +363,7 @@ Voici les options disponibles :
 | *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
 
 ### type
-[[Primitive du shell]]
+{{Primitive du shell}}
 
 Indique si la commande donnée en paramètre est une *primitive du shell*, un alias ou autre. Le chemin où se trouve la commande peut-être retourné.
 
@@ -494,7 +494,7 @@ Voici les options disponibles :
 ## Naviguer dans l'arborescence
 
 ### cd
-[[Primitive du shell]] ((Change directory))
+{{Primitive du shell}} ((Change directory))
 
 Permet de se déplacer dans l'arborescence du système.
 
@@ -1104,7 +1104,7 @@ env
 ```
 
 ### exit
-[[Primitive du shell]]
+{{Primitive du shell}}
 
 La commande `exit` permet de quitter le Terminal sauf dans le cas où un utilisateur est substitué avec `sudo su` : la commande permet alors de revenir à l'utilisateur courant. Le raccourci clavier <kbd>CTRL</kbd> + <kbd>D</kbd> produit le même résultat. Sur certains systèmes, ce raccourci quitte le Terminal.
 
@@ -1113,7 +1113,7 @@ exit
 ```
 
 ### history
-[[Primitive du shell]]
+{{Primitive du shell}}
 
 Affiche toutes les commandes précédemment utilisées, numérotées par ordre d'exécution.
 
@@ -1140,7 +1140,7 @@ history 6
 ```
 
 ### logout
-[[Primitive du shell]]
+{{Primitive du shell}}
 
 Permet de se déconnecter du Terminal. Le raccourci <kbd>CTRL</kbd> + <kbd>D</kbd> produit le même résultat.
 
@@ -1547,7 +1547,7 @@ Voici les principales options :
 | *-w*			| Ecrit dans le fichier `/var/log/wtmp` mais ne s'éteint pas.		|
 
 ### kill
-[[Primitive du shell]]
+{{Primitive du shell}}
 
 Envoie un message pour arrêter un processus. Attention cependant, il est nécessaire d'avoir son numéro PID. L'option *9* permet de terminer le processus sans demande de confirmation.
 
@@ -1718,7 +1718,7 @@ Voici les options disponibles :
 Ce chapitre reprend les commandes vues dans le paragraphe « Commandes en tâche de fond » du chapitre « Le Terminal ».
 
 ### bg
-[[Primitive du shell]] ((Background))
+{{Primitive du shell}} ((Background))
 
 Déplace une tâche en arrière-plan comme si elle avait été lancée avec l'esperluète « & ».
 
@@ -1727,7 +1727,7 @@ bg %2
 ```
 
 ### fg
-[[Primitive du shell]] ((Foreground))
+{{Primitive du shell}} ((Foreground))
 
 Déplace une tâche au premier plan.
 
@@ -1736,7 +1736,7 @@ fg %2
 ```
 
 ### jobs
-[[Primitive du shell]]
+{{Primitive du shell}}
 
 Affiche l'état des tâches.
 
@@ -2229,7 +2229,7 @@ Voici les options disponibles :
 | *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
 
 ### echo
-[[Primitive du shell]]
+{{Primitive du shell}}
 
 Cette commande permet d'afficher une chaîne de caractères. Il n'y a pas grand intérêt à l'utiliser dans un Terminal mais elle prend tout son sens dans l'écriture de scripts. Reportez-vous à ce chapitre pour plus de détails.
 
@@ -2293,7 +2293,7 @@ Voici les options disponibles :
 | *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
 
 ### source
-[[Primitive du shell]]
+{{Primitive du shell}}
 
 Exécute des commandes depuis un fichier dans le Terminal.
 
