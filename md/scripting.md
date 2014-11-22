@@ -464,4 +464,6 @@ Pour finir, la fonction *-fprintf* permet d'écrire le résultat dans le fichier
 
 ## Pour aller plus loin
 
-Le lien suivant est une traduction complète de toutes les possibilités du scripting sous les systèmes GNU/Linux : [Guide avancé d'écriture des scripts Bash](http://abs.traduc.org/ "Guide avancé d'écriture des scripts Bash").
+Le lien suivant est une traduction complète de toutes les possibilités du scripting sous les systèmes GNU/Linux : [Guide avancé d'écriture des scripts Bash][].
+
+[Guide avancé d'écriture des scripts Bash]: http://abs.traduc.org/ "Guide avancé d'écriture des scripts Bash"

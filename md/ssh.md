@@ -3,7 +3,7 @@
 
 ## Se connecter
 
-La commande `ssh` permet de se connecter à un poste distant et de manière sécurisée. Pour plus d'informations : [Wikipedia](http://fr.wikipedia.org/wiki/Secure_Shell "Wikipedia : ssh").
+La commande `ssh` permet de se connecter à un poste distant et de manière sécurisée. Pour plus d'informations : [Wikipedia][].
 
 Pour se connecter à un serveur distant, il suffit d'écrire la commande suivante :
 
@@ -151,7 +151,7 @@ Spécifie si on autorise les redirections X11. Doit être paramétré à « yes 
 
 ## Connexion par clés
 
-Pour plus de sécurité sur votre connexion à distance, il vaut mieux laisser tomber la combinaison login/mot de passe et préférer la cryptographie asymétrique. Ce sujet étant relativement complexe à aborder ici et ne concernant que les aspects de sécurités informatiques, il ne sera pas traité. Vous pourrez trouver plus d'informations [ici](http://fr.wikipedia.org/wiki/Cryptographie_asym%C3%A9trique "Wikipedia : cryptographie asymétrique").
+Pour plus de sécurité sur votre connexion à distance, il vaut mieux laisser tomber la combinaison login/mot de passe et préférer la cryptographie asymétrique. Ce sujet étant relativement complexe à aborder ici et ne concernant que les aspects de sécurités informatiques, il ne sera pas traité. Vous pourrez trouver plus d'informations [ici][].
 
 Selon la configuration `ssh` par défaut, vous pouvez vous connecter sans avoir à générer la paire de clés. Vous pouvez essayer de vous connecter directement avec cette commande :
 
@@ -279,3 +279,6 @@ Voici les principales options :
 | *-q*			| *quiet*		| Masque la barre de progression ainsi que tous les autres messages.						|
 | *-r*			| *recursive*	| Copie les dossiers et leurs contenus de manière récursive.								|
 | *-v*			| *verbose*		| Affiche les messages en mode *debug* pour localiser les problèmes de connexion.			|
+
+[Wikipedia]: http://fr.wikipedia.org/wiki/Secure_Shell "Wikipedia : ssh"
+[ici]: http://fr.wikipedia.org/wiki/Cryptographie_asym%C3%A9trique "Wikipedia : cryptographie asymétrique"

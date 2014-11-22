@@ -43,7 +43,7 @@ Sous Mac OS X, le Terminal se trouve dans le dossier `/Applications/Utilities/`.
 
 Sur bien des aspects, Windows est très différent par rapport aux distributions GNU/Linux.
 
-Pour simuler un environnement [UNIX](http://fr.wikipedia.org/wiki/Unix "Wikipedia : UNIX"), il vous faudra utiliser le logiciel  [Cygwin](http://www.cygwin.com "Cygwin - Site officiel"), plus d'informations sur [Wikipedia](http://fr.wikipedia.org/wiki/Cygwin "Wikipedia : Cygwin"). Après installation de celui-ci, vous aurez alors accès à un Terminal. Attention toutefois, toutes les commandes ne vous seront pas accessibles et vous ne pourrez pas installer de nouveaux programmes via un gestionnaire de paquets.
+Pour simuler un environnement [UNIX][], il vous faudra utiliser le logiciel [Cygwin][], plus d'informations sur [Wikipedia][]. Après installation de celui-ci, vous aurez alors accès à un Terminal. Attention toutefois, toutes les commandes ne vous seront pas accessibles et vous ne pourrez pas installer de nouveaux programmes via un gestionnaire de paquets.
 
 ## Fonctionnement
 
@@ -552,3 +552,7 @@ Defaults env_reset,pwfeedback
 ```
 
 Quittez votre Terminal et relancez-le. Normalement, toute commande vous demandant un mot de passe affiche désormais celui-ci en caractères étoilés.
+
+[UNIX]: http://fr.wikipedia.org/wiki/Unix "Wikipedia : UNIX"
+[Cygwin]: http://www.cygwin.com "Cygwin - Site officiel"
+[Wikipedia]: http://fr.wikipedia.org/wiki/Cygwin "Wikipedia : Cygwin"

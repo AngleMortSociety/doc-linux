@@ -20,7 +20,7 @@ Quelques conseils supplémentaires :
 
 ## fail2ban
 
-Développé en langage *Python*, [fail2ban](http://www.fail2ban.org/wiki/index.php/Main_Page "fail2ban - Site officiel") est un logiciel libre permettant d'analyser des fichiers de logs et de déclencher des actions si certaines choses suspectes sont détectées. La grande force de `fail2ban` est sa grande modularité que cela soit au niveau des mécanismes de détection, basés sur les expressions régulières, ou sur les actions à mener qui peuvent aller de l'expédition d'un mail à la mise en place de règles de Firewall. Vous pouvez trouver plus d'informations sur le site [Ubuntu-fr](http://doc.ubuntu-fr.org/fail2ban "fail2ban - Ubuntu-fr").
+Développé en langage *Python*, [fail2ban][] est un logiciel libre permettant d'analyser des fichiers de logs et de déclencher des actions si certaines choses suspectes sont détectées. La grande force de `fail2ban` est sa grande modularité que cela soit au niveau des mécanismes de détection, basés sur les expressions régulières, ou sur les actions à mener qui peuvent aller de l'expédition d'un mail à la mise en place de règles de Firewall. Vous pouvez trouver plus d'informations sur le site [Ubuntu-fr][].
 
 `fail2ban` se base sur un système de prisons (*jails*) que l'on peut définir, activer ou désactiver dans un simple fichier de configuration (`/etc/fail2ban/jail.conf`).
 
@@ -255,7 +255,7 @@ Pour en avoir le cœur net, n'hésitez pas à écrire ceci dans votre Terminal :
 
 ## rootkits
 	
-Pour la détection de rootkits, vous pouvez utiliser [Rootkit Hunter](http://rootkit.nl/projects/rootkit_hunter.html "Rootkit Hunter - Site officiel") (ou un équivalent tel que [chkrootkit](http://www.chkrootkit.org/ "chkrootkit - Site officiel"))
+Pour la détection de rootkits, vous pouvez utiliser [Rootkit Hunter][] (ou un équivalent tel que [chkrootkit][])
 
 Pour *Rootkit Hunter*, vous pouvez l'installer avec la commande suivante :
 
@@ -371,3 +371,8 @@ Si vous avez une base de données MySQL installée sur votre système, reportez-
 - https://dev.mysql.com/doc/refman/5.0/fr/security-against-attack.html
 - http://www.mag-securs.com/News/tabid/62/id/17917/La-Securisation-des-bases-de-donnees-pour-eviter-de-divulguer-les-informations-privees-sur-Internet.aspx
 - http://www.tux-planet.fr/securisation-d-un-serveur-mysql/
+
+[fail2ban]: http://www.fail2ban.org/wiki/index.php/Main_Page "fail2ban - Site officiel"
+[Ubuntu-fr]: http://doc.ubuntu-fr.org/fail2ban "Ubuntu-fr : fail2ban"
+[Rootkit Hunter]: http://rootkit.nl/projects/rootkit_hunter.html "Rootkit Hunter - Site officiel"
+[chkrootkit]: http://www.chkrootkit.org/ "chkrootkit - Site officiel"

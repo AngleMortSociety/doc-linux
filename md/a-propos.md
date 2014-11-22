@@ -3,7 +3,7 @@
 
 ## Licence
 
-Ce document est sous licence [**Creative Commons**](http://creativecommons.org/licenses/by-sa/4.0/ "CC BY-SA") (CC BY-SA). Toute personne qui le souhaite peut participer à sa réalisation, sa traduction, ou sa diffusion. Le contenu complet est mis à disposition sur GitHub afin de centraliser toutes les ressources. Un script sera bientôt disponible afin de compiler les fichiers (au format Markdown) en vue de réaliser une sortie *epub* ou *pdf* de ce document.
+Ce document est sous licence [**Creative Commons**][] (CC BY-SA). Toute personne qui le souhaite peut participer à sa réalisation, sa traduction, ou sa diffusion. Le contenu complet est mis à disposition sur GitHub afin de centraliser toutes les ressources. Un script sera bientôt disponible afin de compiler les fichiers (au format Markdown) en vue de réaliser une sortie *epub* ou *pdf* de ce document.
 
 ## Note
 
@@ -11,7 +11,7 @@ Ce document a été réalisé avec des distributions de type Debian. Il est poss
 
 ## Aperçu
 
-Avant d'entrer dans le sujet passionnant de GNU/Linux, voici, pour les curieux qui veulent découvrir les relations entre chaque distributions GNU/Linux, un [lien](https://fr.wikipedia.org/wiki/Distribution_Linux#mediaviewer/Fichier:Linux_Distribution_Timeline.svg "Linux Distribution Timeline") intéressant. Cette ligne de temps représente toutes les distributions ainsi que les origines de chacune.
+Avant d'entrer dans le sujet passionnant de GNU/Linux, voici, pour les curieux qui veulent découvrir les relations entre chaque distributions GNU/Linux, un [lien][] intéressant. Cette ligne de temps représente toutes les distributions ainsi que les origines de chacune.
 
 ## Les distributions
 
@@ -41,3 +41,6 @@ Voici les quelques liens qui ont été sources d'inspiration et d'informations d
 
 - kCell									: écriture, documentation, tests
 - Jean-Baptiste Lacour, alias Moonjb	: écriture, relecture, correction
+
+[lien]: https://fr.wikipedia.org/wiki/Distribution_Linux#mediaviewer/Fichier:Linux_Distribution_Timeline.svg "Linux Distribution Timeline"
+[**Creative Commons**]: http://creativecommons.org/licenses/by-sa/4.0/ "CC BY-SA"
