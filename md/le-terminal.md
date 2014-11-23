@@ -37,7 +37,7 @@ ps
 
 ### Mac OS X
 
-Sous Mac OS X, le Terminal se trouve dans le dossier `/Applications/Utilities/`. Avec *Lion* (version 10.7), vous le trouverez aussi dans le *Launchpad* (dossier *outils* ou *autre*) ou encore avec une recherche *Spotlight*.
+Sous Mac OS X, le Terminal se trouve dans le dossier `/Applications/Utilities/`. À partir de *Lion* (version 10.7), vous le trouverez aussi dans le *Launchpad* (dossier *outils* ou *autre*) ou encore avec une recherche *Spotlight* que vous pouvez appeler avec le raccourci suivant : <kbd>CMD</kbd> + <kbd>ESPACE</kbd>.
 
 ### Windows
 
