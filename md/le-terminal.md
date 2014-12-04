@@ -273,6 +273,8 @@ mkdir test
 cd !*
 ```
 
+Il est également possible d'utiliser la variable d'environnement `$_` pour appeler le dernier argument utilisé.
+
 ### Nettoyer l'écran
 
 A force de manipulations, il est probable que le Terminal s’encombre et qu’il devienne peu lisible. Pour y voir plus clair, utilisez la commande `clear` ou le raccourci clavier <kbd>CTRL</kbd> + <kbd>L</kbd>.
@@ -433,23 +435,31 @@ commande-1 |& command-2
 
 ### L'esperluette
 
-Elle désigne le logogramme « & » (esperluette ou esperluète ou encore « ET » commercial), qui ne permet l'exécution de la commande que si la précédente s'est déroulée sans incident, comme ceci :
+Elle désigne le logogramme « & » (esperluette ou esperluète ou encore « ET » commercial). Elle peut être utilisée à diverses fins. La première ne permet l'exécution d'une commande que si la précédente s'est déroulée sans incident :
 
 ``` bash
 aptitude update && aptitude -y upgrade
 ```
 
-La version inverse est d'utiliser deux tubes « &#124;&#124; » : la deuxième commande n'est exécutée que si la première se termine avec une erreur :
+L'inverse est d'utiliser deux tubes « &#124;&#124; » ; la deuxième commande ne sera exécutée que si la première se termine avec une erreur :
 
 ``` bash
 commande-1 || commande-2
 ```
 
-Une autre utilisation de l'esperluète est faite en la plaçant à la suite d'une commande. Ceci a pour effet de lancer cette dernière en tâche de fond. Reportez-vous au chapitre concernant les commandes en tâche de fond pour plus de détails.
+Une utilisation différente en est faite en la plaçant à la suite d'une commande. Ceci a pour effet de lancer cette dernière en tâche de fond. Reportez-vous au chapitre « Commandes en tâche de fond » pour plus de détails :
 
 ``` bash
 commande-1 &
 ```
+
+Il est possible de lancer plusieurs commandes de cette façon sur une ligne :
+
+``` bash
+commande-1 & commande-2 & commande-3
+```
+
+Cela lance les différentes commandes de manière asynchrone. Les valeurs numériques affichées entre crochets, une fois les exécutions terminées, correspondent aux numéros des tâches suivis des identifiants de processus de chacune des commandes ainsi exécutées. Il est à noter, dans l'exemple précédent, que la `commande-3` n'est pas lancée en tâche de fond car aucune esperluette ne la succède.
 
 ### Lancer plusieurs programmes
 
