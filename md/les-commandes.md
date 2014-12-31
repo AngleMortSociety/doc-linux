@@ -82,7 +82,7 @@ date
 ```
 
 ### df
-((Disk Free))
+((Disk free))
 
 Affiche les informations relatives à l'espace disque utilisé par tous les systèmes de fichiers montés.
 
@@ -103,7 +103,7 @@ Voici les principales options :
 | *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
 
 ### du
-((Disk Usage))
+((Disk usage))
 
 Permet de connaître la taille occupée par les fichiers et sous-dossiers du chemin indiqué.
 
@@ -365,11 +365,13 @@ Voici les options disponibles :
 ### type
 {{Primitive du shell}}
 
-Indique si la commande donnée en paramètre est une *primitive du shell*, un alias ou autre. Le chemin où se trouve la commande peut-être retourné.
+Indique le mode d'interprétation par le *shell* de la commande passé en argument :
 
 ``` bash
 type commande
 ```
+
+Retournera si c'est une *primitive du shell* (*builtin* ou *commande interne*), une commande dans la table de hash, un alias ou son chemin d'accès.
 
 ### uname
 
@@ -378,21 +380,6 @@ Pour obtenir des informations sur le système. Pour un retour complet utilisez l
 ``` bash
 uname -a
 ```
-
-### uptime
-
-Affiche l'heure actuelle, la durée depuis laquelle le système fonctionne, le nombre d'utilisateurs actuellement connectés et la charge système moyenne.
-
-``` bash
-uptime
-```
-
-Voici les options disponibles :
-
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *--help*		| *help*		| Affiche l'aide de la commande.									|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
 
 ### users
 
@@ -445,6 +432,7 @@ Voici les principales options :
 | *-s*			| *source*		| Recherche uniquement les sources.		|
 
 ### which
+((Which))
 
 Très utile quand vous cherchez à localiser une commande (fichier binaire) ou un script (fichier exécutable). `which` parcourt la variable globale PATH et vous affiche le résultat. Attention toutefois, vous devez disposer des droits d'exécution pour que le résultat s'affiche. Si vous n'obtenez rien en retour, c'est que la commande (ou le script) n'est pas installée sur votre système ou que vous ne disposez pas de droits suffisants pour voir le résultat. Utile pour voir rapidement si une commande est disponible.
 
@@ -698,6 +686,19 @@ Copier un dossier (et son contenu) nécessite l'option *R* ou *r* (pour *Recursi
 cp -r chemin/dossier/ chemin/autre-dossier/
 ```
 
+Voici les principales options :
+
+| Option 		| Signification	| Détail 																	|
+| :------------	| :------------	| :------------------------------------------------------------------------	|
+| *-i*			| *interactive*	| Demande une confirmation pour chaque action.								|
+| *-n*			| *no-clobber*	| N'écrase pas un fichier existant.											|
+| *-p*			| *preserve*	| Préserve les attributs des fichiers copiés.								|
+| *-R* ou *-r*	| *recursive*	| Permet de copier un dossier et tout son contenu récursivement.			|
+| *-u*			| *update*		| Copie un fichier si il est plus récent ou inexistant.						|
+| *-v*			| *verbose*		| Affiche chaque action.													|
+| *--help*		| *help*		| Affiche l'aide de la commande.											|
+| *--version*	| *version*		| Indique la version actuellement installée sur le système.					|
+
 ### ln
 ((Link))
 
@@ -786,17 +787,19 @@ rm fichier-A fichier-B
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 										|
-| :------------	| :------------	| :--------------------------------------------	|
-| *-i*			| *interactive*	| Demande une confirmation pour chaque fichier.	|
-| *-f*			| *force*		| Comportement inverse.							|
-| *-v*			| *verbose*		| Affiche chaque action.						|
-| *-r* ou *-R*	| *recursive*	| Supprime le dossier et son contenu.			|
+| Option 		| Signification	| Détail 															|
+| :------------	| :------------	| :----------------------------------------------------------------	|
+| *-f*			| *force*		| Comportement inverse à l'option *i*.								|
+| *-i*			| *interactive*	| Demande une confirmation pour chaque fichier.						|
+| *-R* ou *-r*	| *recursive*	| Supprime le dossier et son contenu.								|
+| *-v*			| *verbose*		| Affiche chaque action.											|
+| *--help*		| *help*		| Affiche l'aide de la commande.									|
+| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
 
 ### rmdir
 ((Remove directories))
 
-Commande dédiée à la suppression de dossier. Une contrainte forte est liée à l'utilisation de celle-ci, le dossier doit-être vide pour être supprimé. Préférez la commande `rm` avec l'option *r* ou *R* (pour *Recursive*) qui permet de détruire les dossiers non-vides.
+Commande dédiée à la suppression de dossier. Une contrainte forte est liée à l'utilisation de celle-ci, le dossier doit-être vide pour être supprimé. Préférez la commande `rm` avec l'option *R* ou *r* (pour *Recursive*) qui permet de détruire les dossiers non-vides.
 
 ``` bash
 rmdir chemin/dossier-vide/
@@ -1547,7 +1550,7 @@ Voici les principales options :
 | *-w*			| Ecrit dans le fichier `/var/log/wtmp` mais ne s'éteint pas.		|
 
 ### kill
-{{Primitive du shell}}
+{{Primitive du shell}} ((Kill))
 
 Envoie un message pour arrêter un processus. Attention cependant, il est nécessaire d'avoir son numéro PID. L'option *9* permet de terminer le processus sans demande de confirmation.
 
@@ -1664,16 +1667,8 @@ Voici les principales options :
 | *-r*			| *reboot*		| Redémarre la machine après `shutdown`.					|
 | *-t* n		| *time*		| Eteint la machine après le temps *n* indiqué en seconde.	|
 
-### time
-[[Mot-clé du shell]]
-
-Permet d'obtenir le temps que met une commande pour terminer son exécution complète.
-
-``` bash
-time une-commande
-```
-
 ### tload
+((Time load))
 
 Affiche un graphique d'activité mis à jour en temps réel. Les chiffres en haut à gauche représentent la charge moyenne du système pour la dernière, les 5 et les 15 dernières minutes. Pour revenir au Terminal, utilisez la combinaison de touches <kbd>CTRL</kbd> + <kbd>C</kbd>.
 
@@ -1699,8 +1694,9 @@ top
 ```
 
 ### uptime
+((Up time))
 
-Indique depuis combien de temps le système fonctionne, le nombre d'utilisateurs connectés et la charge moyenne du système pour la dernière, les 5 et les 15 dernières minutes.
+Indique l'heure actuelle, le temps écoulé depuis le démarrage de la machine, le nombre d'utilisateurs connectés et la charge moyenne du système pour la dernière, les 5 et les 15 dernières minutes.
 
 ``` bash
 uptime
@@ -1736,7 +1732,7 @@ fg %2
 ```
 
 ### jobs
-{{Primitive du shell}}
+{{Primitive du shell}} ((Jobs))
 
 Affiche l'état des tâches.
 
@@ -1963,7 +1959,7 @@ Concernant la syntaxe :
 - `jj`			: représente le numéro du jour du mois (de 1 à 31)
 - `MMM`			: représente le numéro du mois (de 1 à 12) ou l'abréviation du nom (jan, feb, mar, apr, ...)
 - `JJJ`			: représente l'abréviation du nom du jour ou le chiffre correspondant au jour de la semaine (0 pour dimanche, 1 pour lundi, ...)
-- `commande`	: représente la commande ou le script `shell` à exécuter (chemin absolu ou relatif)
+- `commande`	: représente la commande ou le script *shell* à exécuter (chemin absolu ou relatif)
 - `log`			: représente le nom d'un fichier dans lequel stocker le journal des opérations. Si la clause de redirection n'est pas spécifiée, `cron` envoie automatiquement un mail de confirmation. Pour éviter ces deux comportements, il suffit de spécifier `> /dev/null`.
 
 Pour chaque unité de temps (minute/heure/...) les notations suivantes sont possibles :
@@ -2005,7 +2001,7 @@ Tous les jours pairs du mois à 23h59
 59 23 */2 * * df >>/tmp/log_df.txt
 ```
 
-Il est également possible d'exécuter automatiquement des commandes plus complexes à l'aide d'un script `shell`. Pour ce faire, il suffit de créer un script, puis de le déclarer en tant que tâche dans la *crontab*.
+Il est également possible d'exécuter automatiquement des commandes plus complexes à l'aide d'un script *shell*. Pour ce faire, il suffit de créer un script, puis de le déclarer en tant que tâche dans la *crontab*.
 
 ### delgroup
 ((Delete group))
@@ -2129,7 +2125,7 @@ Pour modifier le masque, il faut préciser la modification en argument, en notat
 umask 0022
 ```
 
-La durée de vie de la commande `umask` est limitée à la session du `shell` en cours. Pour une modification permanente, il faut configurer le fichier `.profile` (cherchez la ligne concernant la commande `umask`).
+La durée de vie de la commande `umask` est limitée à la session du *shell* en cours. Pour une modification permanente, il faut configurer le fichier `.profile` (cherchez la ligne concernant la commande `umask`).
 
 Par défaut, la valeur de la commande `umask` est : 0022. La création de fichier donnera ces droits : `-rw-r--r--` ; et pour les dossiers, ces droits : `drwxr-xr-x`. Un masque de 0000 donnera les droits suivants pour un fichier : `-rw-rw-rw-` ; et ceux-là pour un dossier : `drwxrwxrwx`.
 
@@ -2175,7 +2171,7 @@ Ces options étant spécifiques à la programmation, reportez-vous aux *manuels*
 ### basename
 ((Base name))
 
-Affiche le chemin (fichier ou dossier) demandé sans le préfixer de son arborescence.
+Affiche le chemin du fichier ou dossier demandé sans le préfixer de son arborescence.
 
 ``` bash
 basename /home/user/fichier.txt
@@ -2207,9 +2203,9 @@ Voici les options disponibles :
 | *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
 
 ### dirname
-((Dir name))
+((Directory name))
 
-Affiche le dossier parent qui contient le chemin (fichier ou dossier) demandé en paramètre de la commande.
+Affiche le dossier parent qui contient le chemin du fichier ou dossier demandé en paramètre de la commande.
 
 ``` bash
 dirname /usr/bin/

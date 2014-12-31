@@ -99,7 +99,7 @@ Cette option peut être suivie d'une liste de motifs de noms de groupes, sépar�
 
 ### AllowTcpForwarding
 
-Spécifie si les redirections TCP sont autorisées. Par défaut cette option est à « yes ». Il est à noter que la désactivation des redirections TCP n'améliore pas la sécurité si les utilisateurs ont un accès à un interpréteur de commandes (`shell`) car ils peuvent toujours installer leurs propres outils de redirections.
+Spécifie si les redirections TCP sont autorisées. Par défaut cette option est à « yes ». Il est à noter que la désactivation des redirections TCP n'améliore pas la sécurité si les utilisateurs ont un accès à un interpréteur de commandes (*shell*) car ils peuvent toujours installer leurs propres outils de redirections.
 
 ### AllowUsers
 
@@ -131,7 +131,7 @@ Indique si `sshd` doit afficher la date et l'heure de la dernière connexion de 
 
 ### PrintMotd
 
-Indique si `sshd` doit afficher le contenu du fichier `/etc/motd` quand un utilisateur se connecte en mode interactif. Sur certains systèmes, il est aussi affiché par l'interpréteur de commandes `shell` paramétré par le fichier `/etc/profile` ou équivalent. Par défaut, cette option est à « yes ».
+Indique si `sshd` doit afficher le contenu du fichier `/etc/motd` quand un utilisateur se connecte en mode interactif. Sur certains systèmes, il est aussi affiché par l'interpréteur de commandes *shell* paramétré par le fichier `/etc/profile` ou équivalent. Par défaut, cette option est à « yes ».
 
 ### Protocol
 

@@ -143,7 +143,7 @@ Contient vos applications web et pages HTML hébergés par votre serveur. Si ce 
 
 ### /etc/profile
 
-Configurations concernant tous les utilisateurs, quel que soit le `shell` de connexion.
+Configurations concernant tous les utilisateurs, quel que soit le *shell* de connexion.
 
 ### /etc/bash.bashrc
 
@@ -151,7 +151,7 @@ Configurations du *shell* `bash` pour tous les utilisateurs.
 
 ### /home/user/.profile
 
-Configuration personnalisé de l'utilisateur, quel que soit le `shell` utilisé (ce fichier est prioritaire sur `/etc/profile`).
+Configuration personnalisé de l'utilisateur, quel que soit le *shell* utilisé (ce fichier est prioritaire sur `/etc/profile`).
 
 ### /home/user/.bashrc
 

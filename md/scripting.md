@@ -13,7 +13,7 @@ Un script commence toujours avec le *Sha-Bang* :
 
 `bash` n'est pas le seul *shell* : vous pouvez le remplacer notamment par `sh` ou `ksh`.
 
-Utilisez des extensions de fichiers pour vos scripts en relation avec le `shell` que vous avez choisi lors de l'écriture du *Sha-Bang*. Ceci permettra d'identifier immédiatement sous quel `shell` ils sont écrits : `exemple.bash` ou `exemple.ksh`.
+Utilisez des extensions de fichiers pour vos scripts en relation avec le *shell* que vous avez choisi lors de l'écriture du *Sha-Bang*. Ceci permettra d'identifier immédiatement sous quel *shell* ils sont écrits : `exemple.bash` ou `exemple.ksh`.
 
 Un fichier contenant un script doit posséder les droits d'exécution de l'utilisateur qui compte s'en servir pour que celui-ci fonctionne.
 
@@ -321,7 +321,7 @@ Maintenant, vous pouvez utiliser votre programme en écrivant tout simplement so
 
 #### De manière permanente
 
-Si vous voulez configurer le PATH de manière permanente, alors vous devez éditer le fichier de configuration de votre `shell` de connexion. Comme le plus souvent c'est le shell `bash` qui est utilisé, vous devez éditer votre fichier `/home/user/.bashrc` (sur certains système, il faut regarder dans le `.profile`).
+Si vous voulez configurer le PATH de manière permanente, alors vous devez éditer le fichier de configuration de votre *shell* de connexion. Comme le plus souvent c'est le *shell* `bash` qui est utilisé, vous devez éditer votre fichier `/home/user/.bashrc` (sur certains système, il faut regarder dans le `.profile`).
 
 Vous pouvez aussi écrire dans le terminal :
 

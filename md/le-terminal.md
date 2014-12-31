@@ -11,13 +11,13 @@ Pour ouvrir une console sous le bureau Gnome, allez dans le menu Applications �
 
 Pour savoir sur quel Terminal vous êtes connecté, regardez la barre de titre qui indique son numéro. Si celui-ci n’est pas indiqué, vous pouvez entrer la commande `tty` pour l’obtenir.
 
-Si vous voulez savoir quels sont les `shell` installés sur votre système, utilisez la commande suivante :
+Si vous voulez savoir quels sont les *shell* installés sur votre système, utilisez la commande suivante :
 
 ``` bash
 more /etc/shells
 ```
 
-Pour connaître le `shell` en cours d'utilisation, entrez :
+Pour connaître le *shell* en cours d'utilisation, entrez :
 
 ``` bash
 echo $SHELL
