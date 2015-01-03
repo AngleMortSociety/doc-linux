@@ -3,6 +3,70 @@
 
 Nous allons passer en revue les commandes les plus courantes qui constituent un système GNU/Linux (quelques différences peuvent néanmoins apparaître selon les systèmes). Toutes ces commandes sont présentes par défaut mais vous pourrez en installer de nouvelles en fonction de vos besoins. De plus, il convient de noter que les options indiquées pour chaque commande ne constituent en aucun cas une liste exhaustive. Il vous sera donc indispensable de lire le *manuel* de chacune afin d'approfondir leur usage.
 
+## Configuration du Terminal
+
+### export
+{{Primitive du shell}}
+
+Cette commande permet de définir les variables d'environnement du *shell*. Par exemple, pour ajouter un chemin afin de rendre accessible des scripts ou de nouveaux programmes :
+
+``` bash
+export PATH=$PATH:/home/user/mes_prog
+```
+
+ATTENTION : il est nécessaire d'inscrire la commande précédente dans un fichier `.bashrc` ou `.profile` si vous souhaitez que la variable ainsi ajoutée ou modifiée persiste au-delà de votre session.
+
+Afin de supprimer une variable d'environnement, utilisez l'option *n* :
+
+``` bash
+export -n EDITOR
+```
+
+L'option *p* permet d'afficher la liste de toutes les variables et fonctions exportées :
+
+``` bash
+export -p
+```
+
+Voici les options disponibles :
+
+| Option 		| Signification	| Détail 															|
+| :------------	| :------------	| :----------------------------------------------------------------	|
+| *-f*			| 				| Se réfère aux fonctions du *shell*.								|
+| *-n*			| 				| Supprime la variable indiquée en paramètre.						|
+| *-p*			| 				| Affiche la liste de toutes les variables et fonctions exportées.	|
+
+### shopt
+{{Primitive du shell}} ((Shell option))
+
+Active ou désactive les options du *shell*. Pour afficher toutes les options disponibles et leurs réglages actuels, entrez le nom de la commande sans aucun paramètre :
+
+``` bash
+shopt
+```
+
+Pour activer une option, utilisez l'option de la commande *s* suivie du nom de l'option du Terminal, par exemple :
+
+``` bash
+shopt -s option
+```
+
+Afin de désactiver une option du Terminal, l'option de la commande est *u* toujours suivie de l'option du Terminal :
+
+``` bash
+shopt -u option
+```
+
+Voici les options disponibles :
+
+| Option 		| Signification	| Détail 																	|
+| :------------	| :------------	| :------------------------------------------------------------------------	|
+| *-o*			| 				| Restreint les options à celles définies pour être utilisées avec `set -o`.|
+| *-p*			| 				| Affiche la liste des options du *shell* en indiquant leurs états.			|
+| *-q*			| 				| Supprime l'affichage.														|
+| *-s*			| 				| Permet d'activer une option du *shell*.									|
+| *-u*			| 				| Permet de désactiver une option du *shell*.								|
+
 ## Commandes d'informations
 
 ### alias
@@ -372,6 +436,21 @@ type commande
 ```
 
 Retournera si c'est une *primitive du shell* (*builtin* ou *commande interne*), une commande dans la table de hash, un alias ou son chemin d'accès.
+
+### unalias
+{{Primitive du shell}}
+
+Permet de supprimer l'alias passé en paramètre :
+
+``` bash
+unalias un-alias
+```
+
+La commande suivante supprime tous les alias :
+
+``` bash
+unalias -a
+```
 
 ### uname
 
@@ -1151,6 +1230,28 @@ Permet de se déconnecter du Terminal. Le raccourci <kbd>CTRL</kbd> + <kbd>D</kb
 logout
 ```
 
+### printenv
+((Print environment))
+
+Utilisée seule, cette commande affiche toutes les variables d'environnement du *shell* et leurs valeurs :
+
+``` bash
+printenv
+```
+
+Il est possible de demander une ou plusieurs variable(s) spécifique(s) :
+
+``` bash
+printenv PATH MAIL
+```
+
+Voici les options disponibles :
+
+| Option 		| Signification	| Détail 															|
+| :------------	| :------------	| :----------------------------------------------------------------	|
+| *--help*		| *help*		| Affiche l'aide de la commande.									|
+| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+
 ### reset
 
 Réinitialise le Terminal. Parfois, il est possible que le Terminal ait des problèmes d'affichage. Dans ce cas, cette commande peut régler ce problème.
@@ -1523,6 +1624,47 @@ Voici les principales options :
 | *--help*		| *help*		| Affiche l'aide de la commande.									|
 | *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
 
+## Gérer les tâches de fond
+
+Ce chapitre reprend les commandes vues dans le paragraphe « Commandes en tâche de fond » du chapitre « Le Terminal ».
+
+### bg
+{{Primitive du shell}} ((Background))
+
+Déplace une tâche en arrière-plan comme si elle avait été lancée avec l'esperluète « & ».
+
+``` bash
+bg %2
+```
+
+### fg
+{{Primitive du shell}} ((Foreground))
+
+Déplace une tâche au premier plan.
+
+``` bash
+fg %2
+```
+
+### jobs
+{{Primitive du shell}} ((Jobs))
+
+Affiche l'état des tâches.
+
+``` bash
+jobs
+```
+
+Voici les options disponibles :
+
+| Option 		| Détail 																				|
+| :------------	| :------------------------------------------------------------------------------------	|
+| *-l*			| Affiche le PID en plus des autres informations.										|
+| *-n*			| Affiche uniquement les processus qui ont changé d'état depuis le dernier affichage.	|
+| *-p*			| Affiche uniquement les PID des commandes actuellement en tâche de fond.				|
+| *-r*			| Restreint l'affichage aux tâches en cours d'exécution.								|
+| *-s*			| Restreint l'affichage aux tâches stoppées.											|
+
 ## Commandes système
 
 ### fdisk
@@ -1708,47 +1850,6 @@ Voici les options disponibles :
 | :------------	| :------------	| :--------------------------------------------------------	|
 | *-h*			| *help*		| Affiche l'aide.											|
 | *-V*			| *Version*		| Indique la version actuellement installée sur le système.	|
-
-## Gérer les tâches de fond
-
-Ce chapitre reprend les commandes vues dans le paragraphe « Commandes en tâche de fond » du chapitre « Le Terminal ».
-
-### bg
-{{Primitive du shell}} ((Background))
-
-Déplace une tâche en arrière-plan comme si elle avait été lancée avec l'esperluète « & ».
-
-``` bash
-bg %2
-```
-
-### fg
-{{Primitive du shell}} ((Foreground))
-
-Déplace une tâche au premier plan.
-
-``` bash
-fg %2
-```
-
-### jobs
-{{Primitive du shell}} ((Jobs))
-
-Affiche l'état des tâches.
-
-``` bash
-jobs
-```
-
-Voici les options disponibles :
-
-| Option 		| Détail 																				|
-| :------------	| :------------------------------------------------------------------------------------	|
-| *-l*			| Affiche le PID en plus des autres informations.										|
-| *-n*			| Affiche uniquement les processus qui ont changé d'état depuis le dernier affichage.	|
-| *-p*			| Affiche uniquement les PID des commandes actuellement en tâche de fond.				|
-| *-r*			| Restreint l'affichage aux tâches en cours d'exécution.								|
-| *-s*			| Restreint l'affichage aux tâches stoppées.											|
 
 ## Administration du système
 
@@ -2168,6 +2269,16 @@ Un autre gestionnaire de paquet. Il s'agit d'une surcouche de `rpm` gérant les 
 
 Ces options étant spécifiques à la programmation, reportez-vous aux *manuels* de chaque commande pour plus de détails sur leur utilisation.
 
+### .
+{{Primitive du shell}}
+
+Lit et exécute des commandes depuis un fichier dans le *shell* actuel. Les éléments dans $PATH sont utilisés pour trouver le répertoire contenant le fichier. Si des arguments sont fournis, ils deviennent des paramètres du script, voir le chapitre « Scripting » pour plus d'informations.
+
+### :
+{{Primitive du shell}}
+
+Ne fait rien (uniquement l’expansion des arguments).
+
 ### basename
 ((Base name))
 
@@ -2201,6 +2312,16 @@ Voici les options disponibles :
 | :------------	| :------------	| :----------------------------------------------------------------	|
 | *--help*		| *help*		| Affiche l'aide de la commande.									|
 | *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+
+### break
+{{Primitive du shell}}
+
+Quitte une boucle en cours d'exécution.
+
+### continue
+{{Primitive du shell}}
+
+Passe à l'itération suivante d'une boucle.
 
 ### dirname
 ((Directory name))
@@ -2260,6 +2381,11 @@ Permet d'indenter les fichiers sources écrits en C, reportez-vous au *manuel* p
 
 Personnalisez les fichiers *log* générés par vos scripts.
 
+### return
+{{Primitive du shell}}
+
+Sortir de la fonction ou du script englobant.
+
 ### sleep
 
 Marque une pause pour le temps demandé :
@@ -2304,3 +2430,92 @@ source .bashrc
 ```
 
 Pas d'option pour cette commande.
+
+### test
+{{Primitive du shell}}
+
+Permet d'évaluer une expression conditionnelle.
+
+### until
+{{Primitive du shell}}
+
+Permet l'écriture de boucle dans l'écriture de scripts, semblable à la commande `while`.
+
+### while
+{{Primitive du shell}}
+
+Permet l'écriture de boucles dans l'écriture de scripts.
+
+## Mots-clé du shell
+
+### !
+
+NON logique du code de sortie d’une commande.
+
+### case
+
+Construction conditionnelle à choix multiples.
+
+### do
+
+Élément d’une construction `for`, `select`, `while` ou `until`.
+
+### done
+
+Élément d’une construction `for`, `select`, `while` ou `until`.
+
+### elif
+
+Élément d’une construction conditionnelle `if`.
+
+### else
+
+Élément d’une construction conditionnelle `if`.
+
+### esac
+
+Fin d’une construction `case`.
+
+### fi
+
+Élément d’une construction conditionnelle `if`.
+
+### for
+
+Construction de boucle.
+
+### function
+
+Permet de définir une fonction.
+
+### if
+
+Construction conditionnelle.
+
+### in
+
+Élément d’une construction `case`.
+
+### select
+
+Construction de menus.
+
+### then
+
+Élément d’une construction conditionnelle `if`.
+
+### time
+
+Permet d'obtenir le temps que met une commande pour terminer son exécution complète. Le format de la sortie peut être défini dans la variable TIMEFORMAT.
+
+``` bash
+time une-commande
+```
+
+### until
+
+Permet l'écriture de boucles dans l'écriture de scripts, semblable au mot-clé `while`.
+
+### while
+
+Permet l'écriture de boucles dans l'écriture de scripts.
