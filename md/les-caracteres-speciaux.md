@@ -343,6 +343,7 @@ Il est parfois nécessaire d'utiliser des codes (ISO ou HTML) afin d'accéder à
 | Caractère		| Code HTML		| Rendu HTML 	| Description								|
 | :------------ | :------------ | :------------ | :---------------------------------------- |
 | ◊				| `&loz;`		| &loz;			| Losange.									|
+| ¦				| `&brvbar;`	| &brvbar;		| Barre brisée.								|
 
 ## Clavier Apple
 
