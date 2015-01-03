@@ -395,67 +395,6 @@ Le point est un synonyme de la commande `source`.
 . fichier
 ```
 
-## Utiliser de la couleur
-
-Il est parfois nécessaire d'utiliser de la couleur ou certaines mises en forme (gras, italique, clignotant) dans des scripts afin d'obtenir une meilleure visualisation du résultat, notamment dans les fichiers de log. La commande de base est la suivante :
-
-``` bash
-echo -e '\033[A;B;CmUne chaîne de caractères.\033[0m'
-```
-
-L'option *e* permet de prendre en compte les paramètres échappés avec les antislashs « \ ». On retrouve ensuite les valeurs A, B et C. A correspond à un effet affecté au texte affiché ; B indique une couleur de texte et enfin C indique la couleur de fond. La séquence `\033[` délimite l'entrée de ces valeurs alors que `\033[0m` clôt ces préférences et revient aux valeurs définies par défaut du Terminal. Respectez à la lettre les points-virgules « ; » et n'utilisez pas d'espaces (uniquement à l'intérieur de votre texte). Il est à noter que la séquence `\033` représente le caractère ASCII d’échappement et le caractère « m » indique une séquence d’échappement de couleur. Le `0m` final permet donc de revenir aux couleurs par défaut.
-
-Avec la commande `printf`, le résultat est identique :
-
-``` bash
-printf '\033[A;B;CmUne chaîne de caractères.\033[0m'
-```
-
-La valeur de A peut-être remplacée par une des valeurs suivantes :
-
-| Code			| Effet				|
-| :------------	| :----------------	|
-| 0				| Réinitialisation	|
-| 1				| Gras				|
-| 21			| Non-gras			|
-| 4				| Souligné			|
-| 24			| Non Souligné		|
-| 5				| Clignotant		|
-| 25			| Non clignotant	|
-| 7				| Inversé			|
-| 27			| Non inversé		|
-| 8				| Masqué			|
-| 28			| Non masqué		|
-
-Pour les couleurs, il faut utiliser les nombres suivants à la place des valeurs B et C :
-
-| Couleur		| Couleur du texte	| Couleur du fond	|
-| :------------ | :---------------: | :---------------:	|
-| Noir			| 30				| 40				|
-| Rouge			| 31				| 41				|
-| Vert			| 32				| 42				|
-| Jaune			| 33				| 43				|
-| Bleu			| 34				| 44				|
-| Magenta		| 35				| 45				|
-| Cyan			| 36				| 46				|
-| Blanc			| 37				| 47				|
-
-Il est possible de n'indiquer qu'une ou deux valeurs sur les trois, par exemple :
-
-``` bash
-echo -e '\033[1mUne chaîne de caractères.\033[0m'
-```
-
-D'autres exemples :
-
-``` bash
-echo -e '\033[31mAttention :\033[0m Ceci est un message important.'
-```
-
-``` bash
-echo -e '\033[7;31;30mInformation :\033[0;5m Ceci est une information.\033[0m'
-```
-
 ## Exemples de scripts
 
 Recherche (commande `find`), à partir du dossier courant, les fichiers avec la permission *s* (`-perm +s`). L'instruction `-exec` permet de lancer des commandes sur les fichiers ainsi trouvés. Avec le `chmod` qui suit, les autorisations *s* sont enlevées.

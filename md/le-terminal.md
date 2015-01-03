@@ -541,6 +541,120 @@ sudo update-alternatives --config editor
 
 Il ne reste plus qu'à choisir le numéro en fonction des éditeurs affichés dans le tableau et d'appuyer sur la touche <kbd>ENTRÉE</kbd>.
 
+### Invite de commande
+
+Pour personnaliser l'invite de commande du Terminal, il est nécessaire de modifier les variables `$PS1` et éventuellement `$PS2`. Il existe aussi les variables `$PS3` et `$PS4`. Voici le champ d'action de chacune de ces variables :
+
+1. `$PS1` : représente la chaîne principale de l’invite de commande.
+2. `$PS2` : invite secondaire affichée lorsque le `bash` a besoin d’informations supplémentaires (par défaut `>`).
+3. `$PS3` : chaîne de l’invite de la commande `select` (par défaut `#?`).
+4. `$PS4` : chaîne de l’invite de l’option *xtrace* (par défaut `+`).
+
+Puisque l’invite n’est utile que si `bash` est employé en mode interactif, il est préférable de la définir globalement dans `/etc/bashrc` ou localement dans `~/.bashrc`.
+
+Voici un exemple de configuration :
+
+``` bash
+export PS1='[\u@\h \d \A] \w \$ '
+```
+
+Il est aussi possible d'utiliser des variables d'environnement comme `$PWD` mais également de changer les couleurs ou d'ajouter des mises en forme, voir le chapitre « Utiliser de la couleur ».
+
+Voici la liste des différents caractères disponibles :
+
+| Commande		| Signification																						|
+| :------------ | :------------------------------------------------------------------------------------------------ |
+| \a			| Le caractère ASCII de la sonnerie (007). Sonnera à chaque commande exécutée dans le Terminal.		|
+| \A			| Affiche l’heure actuelle au format : HH:MM sur 24 heures.											|
+| \d			| Affiche la date actuelle au format : « Jour de la semaine » « Mois » « Jour du mois ».			|
+| \D {format}	| Le *format* est passé à `strftime`(3) et son résultat est inséré dans la chaîne d’invite.			|
+| \e			| Le caractère ASCII d’échappement (033).															|
+| \H			| Le nom d’hôte.																					|
+| \h			| Le nom d’hôte jusqu’au premier point « . ».														|
+| \j			| Le nombre de tâches actuellement gérées par le *shell*.											|
+| \l			| La base du nom du périphérique de Terminal du *shell*.											|
+| \n			| Un retour chariot et un saut de ligne.															|
+| \r			| Un retour chariot.																				|
+| \s			| Le nom du *shell*.																				|
+| \T			| L’heure actuelle au format HH:MM:SS sur 12 heures.												|
+| \t			| L’heure actuelle au format HH:MM:SS sur 24 heures.												|
+| \@			| L’heure actuelle au format HH:MM sur 12 heures (am/pm).											|
+| \u			| Le nom de l’utilisateur courant.																	|
+| \v			| Le numéro de version du `bash`, par exemple : `2.00`.												|
+| \V			| Le numéro de version complet du `bash`, incluant le niveau de correctif, par exemple : `2.00.0`.	|
+| \w			| Le répertoire de travail actuel.																	|
+| \W			| Le nom de base du répertoire de travail actuel.													|
+| \\#			| Le numéro de la commande en cours (sur la session actuelle).										|
+| \\!			| Le numéro d’historique de la commande.															|
+| \$			| Si l’UID réel est 0, affiche le dièse `#`, sinon le dollar `$`.									|
+| \nnn			| Le caractère correspondant au code en octal (007 ou 033 par exemple).								|
+| \\\			| Barre oblique inverse.																			|
+| \\[			| Début d’une suite de caractères non imprimables, comme des séquences de contrôle du Terminal.		|
+| \\]			| Fin d’une suite de caractères non imprimables.													|
+
+Il est à noter que l'option `\D {format}` avec des accolades vides, retournera une représentation de l’heure conformément aux paramètres régionaux du système.
+
+### Utiliser de la couleur
+
+Il est parfois nécessaire d'utiliser de la couleur ou certaines mises en forme (gras, italique, clignotant) afin d'obtenir une meilleure visualisation du résultat, notamment dans les fichiers de log. La commande de base est la suivante :
+
+``` bash
+echo -e '\033[A;B;CmUne chaîne de caractères.\033[0m'
+```
+
+L'option *e* permet de prendre en compte les paramètres échappés avec les antislashs « \ ». On retrouve ensuite les valeurs A, B et C. A correspond à un effet affecté au texte affiché ; B indique une couleur de texte et enfin C indique la couleur de fond. La séquence `\033[` délimite l'entrée de ces valeurs alors que `\033[0m` clôt ces préférences et revient aux valeurs définies par défaut du Terminal. Respectez à la lettre les points-virgules « ; » et n'utilisez pas d'espaces (uniquement à l'intérieur de votre texte). Il est à noter que la séquence `\033` représente le caractère ASCII d’échappement et le caractère « m » indique une séquence d’échappement de couleur. Le `0m` final permet donc de revenir aux couleurs par défaut.
+
+Avec la commande `printf`, le résultat est identique :
+
+``` bash
+printf '\033[A;B;CmUne chaîne de caractères.\033[0m'
+```
+
+La valeur de A peut-être remplacée par une des valeurs suivantes :
+
+| Code			| Effet				|
+| :------------	| :----------------	|
+| 0				| Réinitialisation	|
+| 1				| Gras				|
+| 21			| Non-gras			|
+| 4				| Souligné			|
+| 24			| Non Souligné		|
+| 5				| Clignotant		|
+| 25			| Non clignotant	|
+| 7				| Inversé			|
+| 27			| Non inversé		|
+| 8				| Masqué			|
+| 28			| Non masqué		|
+
+Pour les couleurs, il faut utiliser les nombres suivants à la place des valeurs B et C :
+
+| Couleur		| Couleur du texte	| Couleur du fond	|
+| :------------ | :---------------: | :---------------:	|
+| Noir			| 30				| 40				|
+| Rouge			| 31				| 41				|
+| Vert			| 32				| 42				|
+| Jaune			| 33				| 43				|
+| Bleu			| 34				| 44				|
+| Magenta		| 35				| 45				|
+| Cyan			| 36				| 46				|
+| Blanc			| 37				| 47				|
+
+Il est possible de n'indiquer qu'une ou deux valeurs sur les trois, par exemple :
+
+``` bash
+echo -e '\033[1mUne chaîne de caractères.\033[0m'
+```
+
+D'autres exemples :
+
+``` bash
+echo -e '\033[31mAttention :\033[0m Ceci est un message important.'
+```
+
+``` bash
+echo -e '\033[7;31;30mInformation :\033[0;5m Ceci est une information.\033[0m'
+```
+
 ### Des étoiles lors de la saisie de mots de passe
 
 Il n'est pas recommandé de réaliser cette manipulation. Effectivement, par défaut, quand une commande vous demande d'entrer un mot de passe, aucun caractère n’est affiché lors de votre saisie. Ceci est tout à fait normal. Pour des raisons de sécurité, l'affichage ne montre pas le nombre de caractères qui composent votre mot de passe. Pour modifier ce comportement, utilisez cette commande :
