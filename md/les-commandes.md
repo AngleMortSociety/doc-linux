@@ -429,13 +429,13 @@ Voici les options disponibles :
 ### type
 {{Primitive du shell}}
 
-Indique le mode d'interprétation par le *shell* de la commande passé en argument :
+Indique le mode d'interprétation par le *shell* de la commande passée en argument :
 
 ``` bash
 type commande
 ```
 
-Retournera si c'est une *primitive du shell* (*builtin* ou *commande interne*), une commande dans la table de hash, un alias ou son chemin d'accès.
+Retournera, si c'est une *primitive du shell* (*builtin* ou *commande interne*), une commande dans la table de hash, un alias ou son chemin d'accès.
 
 ### unalias
 {{Primitive du shell}}
