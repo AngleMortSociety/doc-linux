@@ -1298,7 +1298,7 @@ L'option *ok* demande une confirmation avant chaque action.
 find . -name index.html -ok -exec cp {} ./documents/ \;
 ```
 
-#### Des exemples
+#### Exemples
 
 Recherche dans le *home* de l'utilisateur un fichier de plus de 10 Mo (k: Ko / M: Mo / G: Go)
 
@@ -1330,7 +1330,7 @@ Affiche toutes les informations sur les fichiers trouvés (notez que l'option *l
 find -name index.html -ls
 ```
 
-#### autres options
+#### Autres options
 
 | Option 		| Détail 																					|
 | :------------	| :----------------------------------------------------------------------------------------	|
@@ -1347,7 +1347,7 @@ find -name index.html -ls
 - *-ctime*		: globalement, prend en compte n'importe quel changement sur le fichier.
 - *-mtime*		: modification directe du fichier, son contenu a été modifié.
 
-#### manipulation des résultats
+#### Manipulation des résultats
 
 - `find -name "*.jpg" -printf "%p - %u"`		: formate le résultat.
 - `find -name "*.jpg" -delete`					: suppression sans confirmation.
@@ -1694,7 +1694,7 @@ Voici les principales options :
 ### kill
 {{Primitive du shell}} ((Kill))
 
-Envoie un message pour arrêter un processus. Attention cependant, il est nécessaire d'avoir son numéro PID. L'option *9* permet de terminer le processus sans demande de confirmation.
+Envoie un message pour arrêter un processus. Attention cependant, il est nécessaire d'avoir son numéro PID qui peut être trouvé par la commande `ps`. L'option *9* permet de terminer le processus sans demande de confirmation.
 
 ``` bash
 kill -9 423

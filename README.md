@@ -27,9 +27,10 @@ Ce document est sous licence [**Creative Commons**][] (CC BY-SA). Toute personne
 
 ## A faire
 
-- ssh-agent
+- commande email
 - commande ftp
 - irc
+- ssh-agent
 
 [**Creative Commons**]: http://creativecommons.org/licenses/by-sa/4.0/ "CC BY-SA"
 [GitHub]: https://github.com "GitHub - Site officiel"
