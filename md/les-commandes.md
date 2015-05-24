@@ -410,6 +410,49 @@ Affiche les informations concernant le fichier spécifié : dernière date d'ac
 stat fichier
 ```
 
+### tree
+
+Attention : cette commande n'est pas installée par défaut.
+
+Elle permet d'afficher le contenu des dossiers sous forme d'arbre :
+
+``` bash
+tree -L 3 -a
+```
+
+Le résultat ressemble à ceci :
+
+``` bash
+.
+├── Bureau
+│   └── fichier.txt
+├── Documents
+├── exemples.log
+├── Images
+│   ├── GIF
+│   ├── JPG
+│   └── PNG
+├── Modèles
+├── Musique
+│   └── MP3
+├── Public
+├── Téléchargements
+└── Vidéos
+    ├── AVI
+    └── MKV
+
+14 directories, 2 files
+```
+
+Voici les principales options :
+
+| Option 		| Signification	| Détail 															|
+| :------------	| :------------	| :----------------------------------------------------------------	|
+| *-a*			| *all*			| Affiche tous les fichiers, y compris les fichiers cachés.			|
+| *-d*			| *directories*	| Affiche uniquement les dossiers.									|
+| *-L* n		| *Level*		| Profondeur maximum des sous-dossiers indiquée par la valeur *n*.	|
+| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+
 ### tty
 
 Affiche le nom de fichier du Terminal relié à l'entrée standard, autrement dit le numéro du Terminal où vous êtes connecté.
@@ -1576,7 +1619,7 @@ telnet adresse-ip
 La commande `wget` permet de récupérer du contenu d'un serveur Web ou FTP.
 
 ``` bash
-wget http://adresse-web
+wget http://www.adresse-web.com
 ```
 
 Voici les principales options :
@@ -1590,6 +1633,14 @@ Voici les principales options :
 | *-l*				| *level*			| Indique la profondeur maximale du téléchargement récursif (option `r`).						|
 | *-p*				| *pages-requisites*| Permet d'obtenir toutes les images (etc.) nécessaire à l'affichage complet de la page HTML.	|
 | *--limit-rate*=n	| *--limit-rate*	| Limite le téléchargement selon le *n* indiqué.												|
+
+Pour récupérer tous les fichiers d'un FTP de manière récursive et en conservant l'arborescence :
+
+``` bash
+wget -m ftp://USER:PASSWORD@SERVEUR-FTP/dossier-à-copier
+```
+
+L'option *m* active la récursivité (tout comme *r* mais l'option *m* conserve en plus les dates sur les fichiers et va au-delà de 5 niveaux de profondeur dans l'arborescence).
 
 ## Divers
 
@@ -1769,6 +1820,12 @@ Liste les processus en cours d'utilisation, permet d'obtenir le numéro PID pour
 ps -ejh
 ```
 
+Il est également possible d'obtenir le PID d'une application en cours d'exécution à l'aide de son nom :
+
+``` bash
+ps -C chrome
+```
+
 Voici les principales options :
 
 | Option 		| Détail 											|
@@ -1776,6 +1833,7 @@ Voici les principales options :
 | *-ef*			| Liste tous les processus.							|
 | *-ejh*		| Affiche les processus en arbre de parenté.		|
 | *-U* user		| Liste les processus de l'utilisateur indiqué.		|
+| *-C* name		| Affiche les processus en fonction du nom indiqué.	|
 
 ### reboot
 
