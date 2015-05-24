@@ -68,11 +68,11 @@ Afin de se protéger contre les attaques *brute force* `ssh`, explorez le fichie
 ``` bash
 [ssh]
 
-enabled		= true
-port		= ssh,sftp,910 # précisez uniquement le port si il est différent de 22.
-filter		= sshd
-logpath		= /var/log/auth.log
-maxretry	= 3
+enabled     = true
+port        = ssh,sftp,910 # précisez uniquement le port si il est différent de 22.
+filter      = sshd
+logpath     = /var/log/auth.log
+maxretry    = 3
 ```
 
 Dans l'ordre, cela active la surveillance du protocole `ssh`, les ports à bloquer avec les règles *iptables*, le nom du filtre (expression régulière) associé, le fichier de log à lire et, pour terminer, le nombre maximal de tentatives autorisées. Un certain nombre de services disposent de tels blocs de configuration, vous pouvez les activer en passant, si besoin, la valeur de `false` à `true`. Si vous avez changé le port `ssh` par défaut (voir le chapitre concernant cette commande), précisez-le sur la ligne *port* comme indiqué ci-dessus en commentaire.
@@ -90,11 +90,11 @@ Si `apache` est installé sur votre système, vous devez ajouter une règle anti
 ``` bash
 [apache-w00tw00t]
 
-enabled		= true
-filter		= apache-w00tw00t
-action		= iptables[name=Apache-w00tw00t,port=80,protocol=tcp]
-logpath		= /var/log/apache*/*access.log
-maxretry	= 1
+enabled     = true
+filter      = apache-w00tw00t
+action      = iptables[name=Apache-w00tw00t,port=80,protocol=tcp]
+logpath     = /var/log/apache*/*access.log
+maxretry    = 1
 ```
 
 Vous devez aussi ajouter le fichier de règles `/etc/fail2ban/filter.d/apache-w00tw00t.conf` qui doit contenir ceci :
@@ -120,15 +120,15 @@ Ouvrez le fichier `jail.local` et dans la section *default*, ajoutez la ligne `f
 ``` bash
 [DEFAULT]
 
-ignoreip	= 127.0.0.1/8
-findtime	= 900
-bantime		= 31556926
-maxretry	= 2
+ignoreip    = 127.0.0.1/8
+findtime    = 900
+bantime     = 31556926
+maxretry    = 2
 ```
 
-- `findtime`	: Détermine la durée pendant laquelle les tentatives de connexions ont lieu
-- `bantime`		: Détermine la durée du bannissement. Toutes ces valeurs sont en seconde
-- `maxretry`	: Détermine le nombre de tentatives de connexions pendant la durée `findtime`
+- `findtime`    : Détermine la durée pendant laquelle les tentatives de connexions ont lieu
+- `bantime`     : Détermine la durée du bannissement. Toutes ces valeurs sont en seconde
+- `maxretry`    : Détermine le nombre de tentatives de connexions pendant la durée `findtime`
 
 Pour activer le filtre *SASL* permettant le bannissement en cas d'attaque par force brute, il faut modifier l'expression régulière du filtre dans ce fichier :
 
@@ -254,7 +254,7 @@ Dans ce cas, il ne s'agît que d'un lien vers la commande `ssh` qui assure une c
 Pour en avoir le cœur net, n'hésitez pas à écrire ceci dans votre Terminal : `sudo aptitude remove telnet`, `sudo aptitude remove rsh` et `sudo aptitude remove rlogin`.
 
 ## rootkits
-	
+    
 Pour la détection de rootkits, vous pouvez utiliser [Rootkit Hunter][] (ou un équivalent tel que [chkrootkit][])
 
 Pour *Rootkit Hunter*, vous pouvez l'installer avec la commande suivante :

@@ -57,9 +57,9 @@ Une différence notable par rapport à Windows est le symbole destiné à sépar
 
 Concernant la représentation des dossiers, il faut connaitre les différentes significations :
 
-- « . »		: est le dossier courant, celui où se trouve actuellement l'utilisateur
-- « .. »	: représente le dossier parent
-- « ~ »		: le *tilde* représente le dossier utilisateur (dossier *home*)
+- « . »     : est le dossier courant, celui où se trouve actuellement l'utilisateur
+- « .. »    : représente le dossier parent
+- « ~ »     : le *tilde* représente le dossier utilisateur (dossier *home*)
 
 Il est possible d'utiliser des fichiers ou des dossiers cachés au sein du système. Dans ce cas, le nom commence systématiquement par un point « . ».
 
@@ -73,10 +73,10 @@ Cela a pour effet de lister tous les fichiers (quels que soient leurs noms) poss
 
 L'étoile « * » représente un nombre indéfini de caractères quelconques alors que le point d'interrogation « ? » représente un caractère unique. Il est aussi possible d'utiliser des crochets « [] » :
 
-- « [a] »	: signifie égal à "a" (`ls *[a]*` liste tous les fichiers contenant la lettre "a")
-- « [!a] »	: signifie différent de "a" (`ls *[!a]*` liste tous les fichiers, sauf ceux contenant la lettre "a")
-- « [abc] »	: signifie que l'un des caractères est "a", "b" ou "c" (`ls [abc]*` liste tous les fichiers commençant par "a", "b" ou "c").
-- « [a-l] »	: signifie que le caractère est compris entre "a" et "l" (`ls img[a-l]*` liste tous les fichiers commençant par *img* suivi d'une quelconque lettre entre "a" et "l").
+- « [a] »   : signifie égal à "a" (`ls *[a]*` liste tous les fichiers contenant la lettre "a")
+- « [!a] »  : signifie différent de "a" (`ls *[!a]*` liste tous les fichiers, sauf ceux contenant la lettre "a")
+- « [abc] » : signifie que l'un des caractères est "a", "b" ou "c" (`ls [abc]*` liste tous les fichiers commençant par "a", "b" ou "c").
+- « [a-l] » : signifie que le caractère est compris entre "a" et "l" (`ls img[a-l]*` liste tous les fichiers commençant par *img* suivi d'une quelconque lettre entre "a" et "l").
 
 ### Notes
 
@@ -283,16 +283,16 @@ A force de manipulations, il est probable que le Terminal s’encombre et qu’i
 
 Dans un Terminal, il est possible d'utiliser les raccourcis suivants :
 
-| Raccourci														| Détail 																														|
-| :------------------------------------------------------------	| :----------------------------------------------------------------------------------------------------------------------------	|
-| Les flèches <kbd>↑</kbd> et <kbd>↓</kbd>						| Navigation de l'historique pour les commandes précédemment utilisées.															|
-| <kbd>SHIFT</kbd> + ( <kbd>↑</kbd> ou <kbd>↓</kbd> )			| Permet de scroller le contenu du Terminal (la molette de la souris est tout aussi efficace).									|
-| <kbd>SHIFT</kbd> + ( <kbd>Page up</kbd> ou <kbd>down</kbd> )	| Même chose mais de page en page.																								|
-| <kbd>CTRL</kbd> + <kbd>C</kbd>								| Arrête un processus en cours de fonctionnement.																				|
-| <kbd>CTRL</kbd> + <kbd>D</kbd>								| Ferme le terminal en cours d'utilisation ou quitte un utilisateur substitué (similaire aux commandes `exit` et `logout`).		|
-| <kbd>CTRL</kbd> + <kbd>L</kbd>								| Permet de nettoyer le Terminal, le curseur remonte en haut (similaire à la commandes `clear`).								|
-| <kbd>CTRL</kbd> + <kbd>Z</kbd>								| Stoppe le processus en cours, mais ne le détruit pas : il reste en attente. Tapez `fg` pour le faire revenir au premier plan.	|
-| <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>DEL</kbd>				| Diffère en fonction des distributions GNU/Linux.																				|
+| Raccourci                                                     | Détail                                                                                                                        |
+| :------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------- |
+| Les flèches <kbd>↑</kbd> et <kbd>↓</kbd>                      | Navigation de l'historique pour les commandes précédemment utilisées.                                                         |
+| <kbd>SHIFT</kbd> + ( <kbd>↑</kbd> ou <kbd>↓</kbd> )           | Permet de scroller le contenu du Terminal (la molette de la souris est tout aussi efficace).                                  |
+| <kbd>SHIFT</kbd> + ( <kbd>Page up</kbd> ou <kbd>down</kbd> )  | Même chose mais de page en page.                                                                                              |
+| <kbd>CTRL</kbd> + <kbd>C</kbd>                                | Arrête un processus en cours de fonctionnement.                                                                               |
+| <kbd>CTRL</kbd> + <kbd>D</kbd>                                | Ferme le terminal en cours d'utilisation ou quitte un utilisateur substitué (similaire aux commandes `exit` et `logout`).     |
+| <kbd>CTRL</kbd> + <kbd>L</kbd>                                | Permet de nettoyer le Terminal, le curseur remonte en haut (similaire à la commandes `clear`).                                |
+| <kbd>CTRL</kbd> + <kbd>Z</kbd>                                | Stoppe le processus en cours, mais ne le détruit pas : il reste en attente. Tapez `fg` pour le faire revenir au premier plan. |
+| <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>DEL</kbd>             | Diffère en fonction des distributions GNU/Linux.                                                                              |
 
 Il est à noter que ces raccourcis peuvent avoir différents résultats en fonction des systèmes GNU/Linux utilisés.
 
@@ -308,24 +308,24 @@ Quand vous listez le contenu de votre disque dur avec la commande `ls -lh` vous 
 
 Le tout premier caractère de cet exemple indique le type de fichier : ici, c’est un simple fichier. D’autres caractères peuvent représenter les différents types ; en voici la liste exhaustive :
 
-| Option 		| Signification	| Détail 																				|
-| :------------	| :------------	| :------------------------------------------------------------------------------------	|
-| *-*			| *nothing*		| N’indique rien de particulier, c'est un fichier classique.							|
-| *d*			| *directory*	| Indique que c'est un dossier.															|
-| *l*			| *link*		| Indique que c'est un lien symbolique (les liens physiques ne sont pas représentés).	|
-| *c*			| *char*		| Indique que c'est un périphérique de type caractère.									|
-| *b*			| *block*		| Indique que c'est un périphérique de type bloc.										|
-| *p*			| *pipe*		| Indique que c'est un pipe.															|
-| *s*			| *socket*		| Indique que c'est un socket.															|
+| Option        | Signification | Détail                                                                                |
+| :------------ | :------------ | :------------------------------------------------------------------------------------ |
+| *-*           | *nothing*     | N’indique rien de particulier, c'est un fichier classique.                            |
+| *d*           | *directory*   | Indique que c'est un dossier.                                                         |
+| *l*           | *link*        | Indique que c'est un lien symbolique (les liens physiques ne sont pas représentés).   |
+| *c*           | *char*        | Indique que c'est un périphérique de type caractère.                                  |
+| *b*           | *block*       | Indique que c'est un périphérique de type bloc.                                       |
+| *p*           | *pipe*        | Indique que c'est un pipe.                                                            |
+| *s*           | *socket*      | Indique que c'est un socket.                                                          |
 
 Ensuite, le premier groupe de caractères `rw-`, correspond au propriétaire du fichier. Le second `r--` représente le groupe et le dernier `r--` représente les autres utilisateurs. On appelle parfois `r`, `w` et `x` des « flags » ou « drapeaux ». La signification des lettres est la suivante :
 
-| Droit 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *-*			| *nothing*		| Aucun droit de lecture, d'écriture ou d'exécution possible.		|
-| *r*			| *read*		| Droit de lecture : vous pouvez examiner le fichier.				|
-| *w*			| *write*		| Droit d'écriture : vous pouvez apporter des modifications.		|
-| *x*			| *execute*		| Droit d'exécution : valable pour un script ou un binaire.			|
+| Droit         | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *-*           | *nothing*     | Aucun droit de lecture, d'écriture ou d'exécution possible.       |
+| *r*           | *read*        | Droit de lecture : vous pouvez examiner le fichier.               |
+| *w*           | *write*       | Droit d'écriture : vous pouvez apporter des modifications.        |
+| *x*           | *execute*     | Droit d'exécution : valable pour un script ou un binaire.         |
 
 Note : le `x` est spécifique dans le cas d'un dossier car il donne le droit d'accéder ou non au contenu de celui-ci.
 
@@ -482,16 +482,16 @@ Dans le chapitre qui est consacré à la commande `screen`, nous verrons une tro
 
 On place une commande en arrière-plan quand son exécution prend du temps et que l'on veut garder la main pour effectuer d'autres tâches (le système est multitâche). Il existe trois commandes primaires pour contrôler les commandes en tâches de fond :
 
-- `jobs`	: affiche l'état des tâches
-- `fg`		: déplace une tâche au premier plan
-- `bg`		: déplace une tâche en arrière-plan comme si elle avait était lancée avec « & »
+- `jobs`    : affiche l'état des tâches
+- `fg`      : déplace une tâche au premier plan
+- `bg`      : déplace une tâche en arrière-plan comme si elle avait était lancée avec « & »
 
 La commande `jobs` n'affiche rien quand la liste des tâches de fond est vide. Dans le cas contraire, vous aurez quelque chose comme ceci :
 
 ``` bash
-[1]+ En cours d'exécution	top &
-[2]+ Stoppé	sleep 2m &
-[3]+ En cours d'exécution	autreCommande &
+[1]+ En cours d'exécution   top &
+[2]+ Stoppé sleep 2m &
+[3]+ En cours d'exécution   autreCommande &
 etc.
 ```
 
@@ -562,35 +562,35 @@ Il est aussi possible d'utiliser des variables d'environnement comme `$PWD` mais
 
 Voici la liste des différents caractères disponibles :
 
-| Commande		| Signification																						|
+| Commande      | Signification                                                                                     |
 | :------------ | :------------------------------------------------------------------------------------------------ |
-| \a			| Le caractère ASCII de la sonnerie (007). Sonnera à chaque commande exécutée dans le Terminal.		|
-| \A			| Affiche l’heure actuelle au format : HH:MM sur 24 heures.											|
-| \d			| Affiche la date actuelle au format : « Jour de la semaine » « Mois » « Jour du mois ».			|
-| \D {format}	| Le *format* est passé à `strftime`(3) et son résultat est inséré dans la chaîne d’invite.			|
-| \e			| Le caractère ASCII d’échappement (033).															|
-| \H			| Le nom d’hôte.																					|
-| \h			| Le nom d’hôte jusqu’au premier point « . ».														|
-| \j			| Le nombre de tâches actuellement gérées par le *shell*.											|
-| \l			| La base du nom du périphérique de Terminal du *shell*.											|
-| \n			| Un retour chariot et un saut de ligne.															|
-| \r			| Un retour chariot.																				|
-| \s			| Le nom du *shell*.																				|
-| \T			| L’heure actuelle au format HH:MM:SS sur 12 heures.												|
-| \t			| L’heure actuelle au format HH:MM:SS sur 24 heures.												|
-| \@			| L’heure actuelle au format HH:MM sur 12 heures (am/pm).											|
-| \u			| Le nom de l’utilisateur courant.																	|
-| \v			| Le numéro de version du `bash`, par exemple : `2.00`.												|
-| \V			| Le numéro de version complet du `bash`, incluant le niveau de correctif, par exemple : `2.00.0`.	|
-| \w			| Le répertoire de travail actuel.																	|
-| \W			| Le nom de base du répertoire de travail actuel.													|
-| \\#			| Le numéro de la commande en cours (sur la session actuelle).										|
-| \\!			| Le numéro d’historique de la commande.															|
-| \$			| Si l’UID réel est 0, affiche le dièse `#`, sinon le dollar `$`.									|
-| \nnn			| Le caractère correspondant au code en octal (007 ou 033 par exemple).								|
-| \\\			| Barre oblique inverse.																			|
-| \\[			| Début d’une suite de caractères non imprimables, comme des séquences de contrôle du Terminal.		|
-| \\]			| Fin d’une suite de caractères non imprimables.													|
+| \a            | Le caractère ASCII de la sonnerie (007). Sonnera à chaque commande exécutée dans le Terminal.     |
+| \A            | Affiche l’heure actuelle au format : HH:MM sur 24 heures.                                         |
+| \d            | Affiche la date actuelle au format : « Jour de la semaine » « Mois » « Jour du mois ».            |
+| \D {format}   | Le *format* est passé à `strftime`(3) et son résultat est inséré dans la chaîne d’invite.         |
+| \e            | Le caractère ASCII d’échappement (033).                                                           |
+| \H            | Le nom d’hôte.                                                                                    |
+| \h            | Le nom d’hôte jusqu’au premier point « . ».                                                       |
+| \j            | Le nombre de tâches actuellement gérées par le *shell*.                                           |
+| \l            | La base du nom du périphérique de Terminal du *shell*.                                            |
+| \n            | Un retour chariot et un saut de ligne.                                                            |
+| \r            | Un retour chariot.                                                                                |
+| \s            | Le nom du *shell*.                                                                                |
+| \T            | L’heure actuelle au format HH:MM:SS sur 12 heures.                                                |
+| \t            | L’heure actuelle au format HH:MM:SS sur 24 heures.                                                |
+| \@            | L’heure actuelle au format HH:MM sur 12 heures (am/pm).                                           |
+| \u            | Le nom de l’utilisateur courant.                                                                  |
+| \v            | Le numéro de version du `bash`, par exemple : `2.00`.                                             |
+| \V            | Le numéro de version complet du `bash`, incluant le niveau de correctif, par exemple : `2.00.0`.  |
+| \w            | Le répertoire de travail actuel.                                                                  |
+| \W            | Le nom de base du répertoire de travail actuel.                                                   |
+| \\#           | Le numéro de la commande en cours (sur la session actuelle).                                      |
+| \\!           | Le numéro d’historique de la commande.                                                            |
+| \$            | Si l’UID réel est 0, affiche le dièse `#`, sinon le dollar `$`.                                   |
+| \nnn          | Le caractère correspondant au code en octal (007 ou 033 par exemple).                             |
+| \\\           | Barre oblique inverse.                                                                            |
+| \\[           | Début d’une suite de caractères non imprimables, comme des séquences de contrôle du Terminal.     |
+| \\]           | Fin d’une suite de caractères non imprimables.                                                    |
 
 Il est à noter que l'option `\D {format}` avec des accolades vides, retournera une représentation de l’heure conformément aux paramètres régionaux du système.
 
@@ -612,32 +612,32 @@ printf '\033[A;B;CmUne chaîne de caractères.\033[0m'
 
 La valeur de A peut-être remplacée par une des valeurs suivantes :
 
-| Code			| Effet				|
-| :------------	| :----------------	|
-| 0				| Réinitialisation	|
-| 1				| Gras				|
-| 21			| Non-gras			|
-| 4				| Souligné			|
-| 24			| Non Souligné		|
-| 5				| Clignotant		|
-| 25			| Non clignotant	|
-| 7				| Inversé			|
-| 27			| Non inversé		|
-| 8				| Masqué			|
-| 28			| Non masqué		|
+| Code          | Effet             |
+| :------------ | :---------------- |
+| 0             | Réinitialisation  |
+| 1             | Gras              |
+| 21            | Non-gras          |
+| 4             | Souligné          |
+| 24            | Non Souligné      |
+| 5             | Clignotant        |
+| 25            | Non clignotant    |
+| 7             | Inversé           |
+| 27            | Non inversé       |
+| 8             | Masqué            |
+| 28            | Non masqué        |
 
 Pour les couleurs, il faut utiliser les nombres suivants à la place des valeurs B et C :
 
-| Couleur		| Couleur du texte	| Couleur du fond	|
-| :------------ | :---------------: | :---------------:	|
-| Noir			| 30				| 40				|
-| Rouge			| 31				| 41				|
-| Vert			| 32				| 42				|
-| Jaune			| 33				| 43				|
-| Bleu			| 34				| 44				|
-| Magenta		| 35				| 45				|
-| Cyan			| 36				| 46				|
-| Blanc			| 37				| 47				|
+| Couleur       | Couleur du texte  | Couleur du fond   |
+| :------------ | :---------------: | :---------------: |
+| Noir          | 30                | 40                |
+| Rouge         | 31                | 41                |
+| Vert          | 32                | 42                |
+| Jaune         | 33                | 43                |
+| Bleu          | 34                | 44                |
+| Magenta       | 35                | 45                |
+| Cyan          | 36                | 46                |
+| Blanc         | 37                | 47                |
 
 Il est possible de n'indiquer qu'une ou deux valeurs sur les trois, par exemple :
 

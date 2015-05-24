@@ -32,89 +32,89 @@ Voici un bloc conditionnel complet :
 ``` bash
 if [ test ]
 then
-	echo "Le premier test a été vérifié"
+    echo "Le premier test a été vérifié"
 elif [ autre_test ]
 then
-	echo "Le second test a été vérifié"
+    echo "Le second test a été vérifié"
 elif [ encore_autre_test ]
 then
-	echo "Le troisième test a été vérifié"
+    echo "Le troisième test a été vérifié"
 else
-	echo "Aucun des tests précédents n'a été vérifié"
+    echo "Aucun des tests précédents n'a été vérifié"
 fi
 ```
 
 ### Tests sur des chaînes de caractères
 
-| Condition					| Signification																										|
+| Condition                 | Signification                                                                                                     |
 | :------------------------ | :---------------------------------------------------------------------------------------------------------------- |
-| -n Chaîne1				| La longueur de la Chaîne1 n'est pas nulle.																		|
-| -z Chaîne1				| La longueur de la Chaîne1 est nulle.																				|
-| Chaîne1 = Chaîne2			| Chaîne1 et Chaîne2 sont identiques. Notez que bash est sensible à la casse : « b » est donc différent de « B ».	|
-| Chaîne1 != Chaîne2		| Chaîne1 et Chaîne2 sont différentes.																				|
-| Chaîne1					| Chaîne1 n'est pas une chaîne de caractères nulle.																	|
+| -n Chaîne1                | La longueur de la Chaîne1 n'est pas nulle.                                                                        |
+| -z Chaîne1                | La longueur de la Chaîne1 est nulle.                                                                              |
+| Chaîne1 = Chaîne2         | Chaîne1 et Chaîne2 sont identiques. Notez que bash est sensible à la casse : « b » est donc différent de « B ».   |
+| Chaîne1 != Chaîne2        | Chaîne1 et Chaîne2 sont différentes.                                                                              |
+| Chaîne1                   | Chaîne1 n'est pas une chaîne de caractères nulle.                                                                 |
 
 Pour les habitués du langage C, il est possible d'écrire deux fois le symbole d'égalité « == » lors des tests d'équivalence.
 
 ### Tests numériques
 
-| Condition					| Signification																					|
+| Condition                 | Signification                                                                                 |
 | :------------------------ | :-------------------------------------------------------------------------------------------- |
-| $Entier1 -eq $Entier2		| Entier1 et Entier2 sont, algébriquement parlant, égaux.										|
-| $Entier1 -ne $Entier2		| Entier1 n'est pas égal à Entier2.																|
-| $Entier1 -gt $Entier2		| Entier1 est strictement supérieur à Entier2.													|
-| $Entier1 -ge $Entier2		| Entier1 est supérieur ou égal à Entier2.														|
-| $Entier1 -lt $Entier2		| Entier1 est strictement inférieur à Entier2.													|
-| $Entier1 -le $Entier2		| Entier1 est inférieur ou égal à Entier2.														|
+| $Entier1 -eq $Entier2     | Entier1 et Entier2 sont, algébriquement parlant, égaux.                                       |
+| $Entier1 -ne $Entier2     | Entier1 n'est pas égal à Entier2.                                                             |
+| $Entier1 -gt $Entier2     | Entier1 est strictement supérieur à Entier2.                                                  |
+| $Entier1 -ge $Entier2     | Entier1 est supérieur ou égal à Entier2.                                                      |
+| $Entier1 -lt $Entier2     | Entier1 est strictement inférieur à Entier2.                                                  |
+| $Entier1 -le $Entier2     | Entier1 est inférieur ou égal à Entier2.                                                      |
 
 ### Caractéristiques de fichiers
 
-| Condition					| Signification																					|
+| Condition                 | Signification                                                                                 |
 | :------------------------ | :-------------------------------------------------------------------------------------------- |
-| -b Fichier				| Fichier existe et est un fichier spécial en mode bloc.										|
-| -c Fichier				| Fichier existe et est un fichier spécial en mode caractère.									|
-| -d Fichier				| Fichier existe et est un répertoire.															|
-| -e Fichier				| Fichier existe.																				|
-| -f Fichier				| Fichier existe et est de type ordinaire.														|
-| -g Fichier				| Fichier existe et le bit Set Group ID est actif.												|
-| -h Fichier				| Fichier existe et est un lien symbolique.														|
-| -k Fichier				| Fichier existe et le sticky bit est actif.													|
-| -L Fichier				| Fichier existe et est un lien symbolique (même chose que -h).									|
-| -p Fichier				| Fichier existe et est un tube nommé (*named pipe*, FIFO).										|
-| -r Fichier				| Fichier existe et est accessible en lecture.													|
-| -S Fichier				| Fichier existe et est un fichier spécial socket.												|
-| -s Fichier				| Fichier existe et a une taille non nulle.														|
-| -t Descripteur			| Le descripteur de fichier est ouvert et associé à un terminal.								|
-| -u Fichier				| Fichier existe et le bit Set User ID est actif.												|
-| -w Fichier				| Fichier existe et est spécifié comme étant accessible en écriture. Cependant, il ne sera pas accessible en écriture sur un système de fichier en lecture seule, même si le test indique vrai (*true*).												|
-| -x Fichier				| Fichier existe et est spécifié comme étant exécutable. Si le fichier spécifié est un répertoire, une valeur de retour vrai (*true*) signifie que le processus courant a la permission de parcourir ce répertoire.											|
+| -b Fichier                | Fichier existe et est un fichier spécial en mode bloc.                                        |
+| -c Fichier                | Fichier existe et est un fichier spécial en mode caractère.                                   |
+| -d Fichier                | Fichier existe et est un répertoire.                                                          |
+| -e Fichier                | Fichier existe.                                                                               |
+| -f Fichier                | Fichier existe et est de type ordinaire.                                                      |
+| -g Fichier                | Fichier existe et le bit Set Group ID est actif.                                              |
+| -h Fichier                | Fichier existe et est un lien symbolique.                                                     |
+| -k Fichier                | Fichier existe et le sticky bit est actif.                                                    |
+| -L Fichier                | Fichier existe et est un lien symbolique (même chose que -h).                                 |
+| -p Fichier                | Fichier existe et est un tube nommé (*named pipe*, FIFO).                                     |
+| -r Fichier                | Fichier existe et est accessible en lecture.                                                  |
+| -S Fichier                | Fichier existe et est un fichier spécial socket.                                              |
+| -s Fichier                | Fichier existe et a une taille non nulle.                                                     |
+| -t Descripteur            | Le descripteur de fichier est ouvert et associé à un terminal.                                |
+| -u Fichier                | Fichier existe et le bit Set User ID est actif.                                               |
+| -w Fichier                | Fichier existe et est spécifié comme étant accessible en écriture. Cependant, il ne sera pas accessible en écriture sur un système de fichier en lecture seule, même si le test indique vrai (*true*).                                                |
+| -x Fichier                | Fichier existe et est spécifié comme étant exécutable. Si le fichier spécifié est un répertoire, une valeur de retour vrai (*true*) signifie que le processus courant a la permission de parcourir ce répertoire.                                         |
 
 ### Comparaisons au niveau des fichiers
 
-| Condition					| Signification																												|
+| Condition                 | Signification                                                                                                             |
 | :------------------------ | :------------------------------------------------------------------------------------------------------------------------ |
-| Fichier1 -nt Fichier2		| Fichier1 est plus récent que Fichier2.																					|
-| Fichier1 -ot Fichier2		| Fichier1 est plus ancien que Fichier2.																					|
-| Fichier1 -ef Fichier2		| Fichier1 et Fichier2 pointent vers le même fichier (par le biais d'un lien symbolique ou d'un lien physique).				|
+| Fichier1 -nt Fichier2     | Fichier1 est plus récent que Fichier2.                                                                                    |
+| Fichier1 -ot Fichier2     | Fichier1 est plus ancien que Fichier2.                                                                                    |
+| Fichier1 -ef Fichier2     | Fichier1 et Fichier2 pointent vers le même fichier (par le biais d'un lien symbolique ou d'un lien physique).             |
 
 ### Opérateurs
 
 Tous les tests ci-dessus peuvent être combinés avec les opérateurs suivants :
 
-| Condition					| Signification																												|
+| Condition                 | Signification                                                                                                             |
 | :------------------------ | :------------------------------------------------------------------------------------------------------------------------ |
-| !							| Opérateur unaire de la négation.																							|
-| -a						| Opérateur binaire ET.																										|
-| -o						| Opérateur binaire OU (l'opérateur *-a* est prioritaire sur l'opérateur *-o*).												|
-| \(Expression\)			| Les parenthèses pour effectuer des groupements doivent être échappées par des antislashs (barre oblique inversée, « \ »).	|
+| !                         | Opérateur unaire de la négation.                                                                                          |
+| -a                        | Opérateur binaire ET.                                                                                                     |
+| -o                        | Opérateur binaire OU (l'opérateur *-a* est prioritaire sur l'opérateur *-o*).                                             |
+| \(Expression\)            | Les parenthèses pour effectuer des groupements doivent être échappées par des antislashs (barre oblique inversée, « \ »). |
 
 ### Code de retour
 
-| Code						| Signification																												|
+| Code                      | Signification                                                                                                             |
 | :------------------------ | :------------------------------------------------------------------------------------------------------------------------ |
-| 0							| L'expression conditionnelle est vraie (*true*).																			|
-| 1							| L'expression conditionnelle est fausse (*false*).																			|
-| >1						| Une erreur s'est produite.																								|
+| 0                         | L'expression conditionnelle est vraie (*true*).                                                                           |
+| 1                         | L'expression conditionnelle est fausse (*false*).                                                                         |
+| >1                        | Une erreur s'est produite.                                                                                                |
 
 Les conditions « ET » s'écrivent de la façon suivante :
 
@@ -138,14 +138,14 @@ if [ ! -e fichier ]
 
 ``` bash
 case "$1" in
-	"Bruno")
-		echo "Salut Bruno !"
-		;;
-	"Michel")
-		echo "Bien le bonjour Michel"
-		;;
-	*)
-		echo "Je ne te connais pas, au revoir !"
+    "Bruno")
+        echo "Salut Bruno !"
+        ;;
+    "Michel")
+        echo "Bien le bonjour Michel"
+        ;;
+    *)
+        echo "Je ne te connais pas, au revoir !"
 esac
 ```
 
@@ -154,7 +154,7 @@ esac
 ``` bash
 while [ test ]
 do
-	echo 'Action en boucle'
+    echo 'Action en boucle'
 done
 ```
 
@@ -163,7 +163,7 @@ done
 ``` bash
 for variable in 'valeur1' 'valeur2' 'valeur3'
 do
-	echo "La variable vaut $variable"
+    echo "La variable vaut $variable"
 done
 ```
 
@@ -172,7 +172,7 @@ done
 ``` bash
 for i in `seq 1 10`;
 do
-	echo $i
+    echo $i
 done
 ```
 
@@ -286,9 +286,9 @@ echo `$uneCommande`
 
 ### Pour résumer
 
-- les guillemets doubles « " »	: permettent l'interprétation des caractères spéciaux (« $ », « \ » et « ` »)
-- les guillemets simples « ' »	: affichent le contenu tel quel, aucune interprétation n'est réalisée
-- les guillemets inverses « ` »	: exécutent une commande
+- les guillemets doubles « " »  : permettent l'interprétation des caractères spéciaux (« $ », « \ » et « ` »)
+- les guillemets simples « ' »  : affichent le contenu tel quel, aucune interprétation n'est réalisée
+- les guillemets inverses « ` » : exécutent une commande
 
 ### Retour utilisateur
 
@@ -314,8 +314,8 @@ Pour exécuter un script, vous devez écrire le nom du fichier précédé de « 
 
 Si on veut ajouter par exemple `/home/user/mes_prog` à la variable PATH :
 
-- `export PATH=$PATH:/home/user/mes_prog`	: Ajoutera le dossier en dernier.
-- `export PATH=/home/user/mes_prog:$PATH`	: Ajoutera le dossier en premier, peut-être dangereux.
+- `export PATH=$PATH:/home/user/mes_prog`   : Ajoutera le dossier en dernier.
+- `export PATH=/home/user/mes_prog:$PATH`   : Ajoutera le dossier en premier, peut-être dangereux.
 
 Maintenant, vous pouvez utiliser votre programme en écrivant tout simplement son nom. A la déconnexion, PATH reprendra sa valeur par défaut, `/home/user/mes_prog` n'existera plus.
 

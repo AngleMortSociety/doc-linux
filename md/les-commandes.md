@@ -30,11 +30,11 @@ export -p
 
 Voici les options disponibles :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *-f*			| 				| Se réfère aux fonctions du *shell*.								|
-| *-n*			| 				| Supprime la variable indiquée en paramètre.						|
-| *-p*			| 				| Affiche la liste de toutes les variables et fonctions exportées.	|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *-f*          |               | Se réfère aux fonctions du *shell*.                               |
+| *-n*          |               | Supprime la variable indiquée en paramètre.                       |
+| *-p*          |               | Affiche la liste de toutes les variables et fonctions exportées.  |
 
 ### shopt
 {{Primitive du shell}} ((Shell option))
@@ -59,13 +59,13 @@ shopt -u option
 
 Voici les options disponibles :
 
-| Option 		| Signification	| Détail 																	|
-| :------------	| :------------	| :------------------------------------------------------------------------	|
-| *-o*			| 				| Restreint les options à celles définies pour être utilisées avec `set -o`.|
-| *-p*			| 				| Affiche la liste des options du *shell* en indiquant leurs états.			|
-| *-q*			| 				| Supprime l'affichage.														|
-| *-s*			| 				| Permet d'activer une option du *shell*.									|
-| *-u*			| 				| Permet de désactiver une option du *shell*.								|
+| Option        | Signification | Détail                                                                    |
+| :------------ | :------------ | :------------------------------------------------------------------------ |
+| *-o*          |               | Restreint les options à celles définies pour être utilisées avec `set -o`.|
+| *-p*          |               | Affiche la liste des options du *shell* en indiquant leurs états.         |
+| *-q*          |               | Supprime l'affichage.                                                     |
+| *-s*          |               | Permet d'activer une option du *shell*.                                   |
+| *-u*          |               | Permet de désactiver une option du *shell*.                               |
 
 ## Commandes d'informations
 
@@ -156,15 +156,15 @@ df -HaT --total
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *-a*			| *all*			| Affiche les systèmes de fichiers ayant une taille de 0 blocs.		|
-| *-h*			| *human*		| Indique la taille des fichiers en Ko, Mo, Go (base 2).			|
-| *-H*			| *Human*		| Indique la taille des fichiers en Ko, Mo, Go (base 10).			|
-| *-T*			| *Type*		| Affiche le système de fichier.									|
-| *--total*		| *total*		| Donne le total de chaque type de données affichées.				|
-| *--help*		| *help*		| Affiche l'aide de la commande.									|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *-a*          | *all*         | Affiche les systèmes de fichiers ayant une taille de 0 blocs.     |
+| *-h*          | *human*       | Indique la taille des fichiers en Ko, Mo, Go (base 2).            |
+| *-H*          | *Human*       | Indique la taille des fichiers en Ko, Mo, Go (base 10).           |
+| *-T*          | *Type*        | Affiche le système de fichier.                                    |
+| *--total*     | *total*       | Donne le total de chaque type de données affichées.               |
+| *--help*      | *help*        | Affiche l'aide de la commande.                                    |
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.         |
 
 ### du
 ((Disk usage))
@@ -177,13 +177,13 @@ du -hs chemin
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *-a*			| *all*			| Affiche tout (par défaut, n'affiche que les sous-dossiers).		|
-| *-h*			| *human*		| Indique la taille des fichiers en Ko, Mo, Go.						|
-| *-s*			| *simple*		| Donne uniquement le résultat, incompatible avec l'option *a*.		|
-| *--help*		| *help*		| Affiche l'aide de la commande.									|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *-a*          | *all*         | Affiche tout (par défaut, n'affiche que les sous-dossiers).       |
+| *-h*          | *human*       | Indique la taille des fichiers en Ko, Mo, Go.                     |
+| *-s*          | *simple*      | Donne uniquement le résultat, incompatible avec l'option *a*.     |
+| *--help*      | *help*        | Affiche l'aide de la commande.                                    |
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.         |
 
 ### file
 
@@ -203,11 +203,11 @@ free -hts 10
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 																		|
-| :------------	| :------------	| :----------------------------------------------------------------------------	|
-| *-h*			| *human*		| Indique la taille des fichiers en Ko, Mo, Go.									|
-| *-s* n		| *seconds*		| Affiche, toutes les *n* secondes, le tableau. A vous d'indiquer un temps.		|
-| *-t*			| *total*		| Ajoute une ligne qui additionne toutes les valeurs.							|
+| Option        | Signification | Détail                                                                        |
+| :------------ | :------------ | :---------------------------------------------------------------------------- |
+| *-h*          | *human*       | Indique la taille des fichiers en Ko, Mo, Go.                                 |
+| *-s* n        | *seconds*     | Affiche, toutes les *n* secondes, le tableau. A vous d'indiquer un temps.     |
+| *-t*          | *total*       | Ajoute une ligne qui additionne toutes les valeurs.                           |
 
 Utilisez la combinaison de touches <kbd>CTRL</kbd> + <kbd>C</kbd> pour quitter la commande lancée avec l'option *s*.
 
@@ -236,11 +236,11 @@ help primitive-du-shell
 
 Voici les options disponibles :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *-d*			| *description*	| Affiche une courte description.									|
-| *-m*			| *manual*		| Affiche l'aide dans un format proche des pages de manuels.		|
-| *-s*			| *synopsis*	| Affiche le synopsis pour utiliser la *primitive du shell*.		|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *-d*          | *description* | Affiche une courte description.                                   |
+| *-m*          | *manual*      | Affiche l'aide dans un format proche des pages de manuels.        |
+| *-s*          | *synopsis*    | Affiche le synopsis pour utiliser la *primitive du shell*.        |
 
 ### id
 
@@ -270,18 +270,18 @@ ls -FlAh chemin
 
 Voici les principales options :
 
-| Option 		| Signification | Détail 																				|
-| :------------	| :------------	| :------------------------------------------------------------------------------------	|
-| *-a*			| *all*			| Affiche tous les fichiers, y compris les fichiers cachés.								|
-| *-A*			| *Almost all*	| Idem que *a* mais sans les dossiers « . » et « .. »									|
-| *-F*			| *classiFy*	| Ajoute un indicateur aux dossiers, exécutables, liens, etc. (* / = > @ &#124;).		|
-| *-p*			| 				| Ajoute un indicateur aux dossiers : « / ».											|
-| *-l*			| *list*		| Liste détaillée (affiche les droits, la date, l'utilisateur, le groupe, etc.).		|
-| *-h*			| *human*		| Indique la taille des fichiers en Ko, Mo, Go.											|
-| *-t*			| *time*		| Tri par date de dernière modification (nouveaux en premier).							|
-| *-r*			| *reverse*		| Inverse le tri.																		|
-| *-R*			| *Recursive*	| Affiche également le contenu de chaque dossier.										|
-| *-i*			| *inode*		| Affiche les numéros d'inode, utile pour repérer les liens (voir la commande `ln`).	|
+| Option        | Signification | Détail                                                                                |
+| :------------ | :------------ | :------------------------------------------------------------------------------------ |
+| *-a*          | *all*         | Affiche tous les fichiers, y compris les fichiers cachés.                             |
+| *-A*          | *Almost all*  | Idem que *a* mais sans les dossiers « . » et « .. »                                   |
+| *-F*          | *classiFy*    | Ajoute un indicateur aux dossiers, exécutables, liens, etc. (* / = > @ &#124;).       |
+| *-p*          |               | Ajoute un indicateur aux dossiers : « / ».                                            |
+| *-l*          | *list*        | Liste détaillée (affiche les droits, la date, l'utilisateur, le groupe, etc.).        |
+| *-h*          | *human*       | Indique la taille des fichiers en Ko, Mo, Go.                                         |
+| *-t*          | *time*        | Tri par date de dernière modification (nouveaux en premier).                          |
+| *-r*          | *reverse*     | Inverse le tri.                                                                       |
+| *-R*          | *Recursive*   | Affiche également le contenu de chaque dossier.                                       |
+| *-i*          | *inode*       | Affiche les numéros d'inode, utile pour repérer les liens (voir la commande `ln`).    |
 
 ### man
 ((Manual))
@@ -294,16 +294,16 @@ man commande
 
 Les principales touches pour le manipuler sont :
 
-| Touche 											| Evènement																										|
-| :------------------------------------------------	| :------------------------------------------------------------------------------------------------------------ |
-| <kbd>pageDown</kbd> ou <kbd>Espace</kbd>			| Descend d'une page.																							|
-| <kbd>pageUp</kbd> ou <kbd>b</kbd>					| Remonte d'une page.																							|
-| <kbd>↓</kbd> ou <kbd>j</kbd> ou <kbd>ENTRÉE</kbd>	| Descend d'une ligne.																							|
-| <kbd>↑</kbd> ou <kbd>y</kbd>						| Remonte d'une ligne.																							|
-| <kbd>q</kbd> ou <kbd>Q</kbd>						| Quitte le *manuel*.																							|
-| <kbd>=</kbd>										| Indique le numéro de la première ligne ainsi que celui de la dernière affichée à l'écran.						|
-| <kbd>h</kbd> ou <kbd>H</kbd>						| Affiche l'aide, <kbd>q</kbd> pour revenir au *manuel*.														|
-| <kbd>/</kbd>										| Lance une recherche. Tapez <kbd>n</kbd> pour afficher le résultat suivant et <kbd>N</kbd> pour le précédent.	|
+| Touche                                            | Evènement                                                                                                     |
+| :------------------------------------------------ | :------------------------------------------------------------------------------------------------------------ |
+| <kbd>pageDown</kbd> ou <kbd>Espace</kbd>          | Descend d'une page.                                                                                           |
+| <kbd>pageUp</kbd> ou <kbd>b</kbd>                 | Remonte d'une page.                                                                                           |
+| <kbd>↓</kbd> ou <kbd>j</kbd> ou <kbd>ENTRÉE</kbd> | Descend d'une ligne.                                                                                          |
+| <kbd>↑</kbd> ou <kbd>y</kbd>                      | Remonte d'une ligne.                                                                                          |
+| <kbd>q</kbd> ou <kbd>Q</kbd>                      | Quitte le *manuel*.                                                                                           |
+| <kbd>=</kbd>                                      | Indique le numéro de la première ligne ainsi que celui de la dernière affichée à l'écran.                     |
+| <kbd>h</kbd> ou <kbd>H</kbd>                      | Affiche l'aide, <kbd>q</kbd> pour revenir au *manuel*.                                                        |
+| <kbd>/</kbd>                                      | Lance une recherche. Tapez <kbd>n</kbd> pour afficher le résultat suivant et <kbd>N</kbd> pour le précédent.  |
 
 #### Les sections
 
@@ -337,15 +337,15 @@ man 3 intro
 
 Plusieurs chapitres composent un *manuel* :
 
-- *Name*			: le nom de la commande
-- *Synopsis*		: indique comment utiliser la commande (voir ci-dessous)
-- *Description*		: explique la commande en détail
-- *Options*			: liste et détaille les options
-- *Exemples*		: exemples d'utilisation, cette section n'est pas toujours présente
-- *Author(s)*		: personnes qui ont participées au développement
-- *Reporting bugs*	: adresses pour contacter les personnes quand vous trouvez des bugs
-- *Copyright*		: termes qui indiquent la licence utilisée
-- *See also*		: voir aussi, d'autres commandes ou pages de *manuel*
+- *Name*            : le nom de la commande
+- *Synopsis*        : indique comment utiliser la commande (voir ci-dessous)
+- *Description*     : explique la commande en détail
+- *Options*         : liste et détaille les options
+- *Exemples*        : exemples d'utilisation, cette section n'est pas toujours présente
+- *Author(s)*       : personnes qui ont participées au développement
+- *Reporting bugs*  : adresses pour contacter les personnes quand vous trouvez des bugs
+- *Copyright*       : termes qui indiquent la licence utilisée
+- *See also*        : voir aussi, d'autres commandes ou pages de *manuel*
 
 D'autres chapitres peuvent être présents mais ceux-ci sont les plus courants.
 
@@ -353,32 +353,32 @@ D'autres chapitres peuvent être présents mais ceux-ci sont les plus courants.
 
 Une mise en forme standardisée explique comment une commande doit-être utilisée, voici le détail :
 
-| Mise en forme				| Détail																								|
-| :------------------------	| :---------------------------------------------------------------------------------------------------- |
-| **Mot en gras**			| Ecrire le mot tel quel, sans aucune modification, obligatoire (en général le nom de la commande).		|
-| <u>Mot souligné</u>		| Doit être remplacé par le nom approprié (le soulignement n'est pas toujours actif).					|
-| [OPTIONS]					| Les crochets représentent des options, donc facultatif.												|
-| DIRECTORY					| Arborescence requise (chemin absolu ou relatif).														|
-| ...						| Signifie que l'on peut répéter plusieurs fois le mot clé précédent.									|
+| Mise en forme             | Détail                                                                                                |
+| :------------------------ | :---------------------------------------------------------------------------------------------------- |
+| **Mot en gras**           | Ecrire le mot tel quel, sans aucune modification, obligatoire (en général le nom de la commande).     |
+| <u>Mot souligné</u>       | Doit être remplacé par le nom approprié (le soulignement n'est pas toujours actif).                   |
+| [OPTIONS]                 | Les crochets représentent des options, donc facultatif.                                               |
+| DIRECTORY                 | Arborescence requise (chemin absolu ou relatif).                                                      |
+| ...                       | Signifie que l'on peut répéter plusieurs fois le mot clé précédent.                                   |
 
 #### Extensions et traductions
 
 Il est possible d'installer des paquets supplémentaires pour avoir, par exemple, les pages de *manuel* en français :
 
-- *manpages-fr*			: version française des pages de manuel pour l'utilisation de GNU/Linux
-- *manpages-fr-extra*	: version française des pages de manuel concernant les programmes
-- *manpages*			: pages de manuel (en anglais) pour l'utilisation de GNU/Linux
-- *manpages-posix*		: pages de manuel (en anglais) pour l'utilisation des systèmes POSIX
+- *manpages-fr*         : version française des pages de manuel pour l'utilisation de GNU/Linux
+- *manpages-fr-extra*   : version française des pages de manuel concernant les programmes
+- *manpages*            : pages de manuel (en anglais) pour l'utilisation de GNU/Linux
+- *manpages-posix*      : pages de manuel (en anglais) pour l'utilisation des systèmes POSIX
 
 Pour les développeurs :
 
-- *manpages-fr-dev*		: version française des pages de manuel pour les développeurs
-- *manpages-dev*		: pages de manuel (en anglais) pour les développeurs
-- *manpages-posix-dev*	: pages de manuel (en anglais) sur l'utilisation des systèmes POSIX pour les développeurs
+- *manpages-fr-dev*     : version française des pages de manuel pour les développeurs
+- *manpages-dev*        : pages de manuel (en anglais) pour les développeurs
+- *manpages-posix-dev*  : pages de manuel (en anglais) sur l'utilisation des systèmes POSIX pour les développeurs
 
 Autre :
 
-- *funny-manpages*		: pages de manuel humoristique (en anglais)
+- *funny-manpages*      : pages de manuel humoristique (en anglais)
 
 Si vous installez une version *fr* pour les *manuels*, il est toujours bon d'avoir en plus les versions originales en anglais. Pour ce faire utilisez l'option *L* (pour *Locate*), comme ceci :
 
@@ -397,10 +397,10 @@ pwd
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *--help*		| *help*		| Affiche l'aide de la commande.									|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *--help*      | *help*        | Affiche l'aide de la commande.                                    |
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.         |
 
 ### stat
 
@@ -446,12 +446,12 @@ Le résultat ressemble à ceci :
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *-a*			| *all*			| Affiche tous les fichiers, y compris les fichiers cachés.			|
-| *-d*			| *directories*	| Affiche uniquement les dossiers.									|
-| *-L* n		| *Level*		| Profondeur maximum des sous-dossiers indiquée par la valeur *n*.	|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *-a*          | *all*         | Affiche tous les fichiers, y compris les fichiers cachés.         |
+| *-d*          | *directories* | Affiche uniquement les dossiers.                                  |
+| *-L* n        | *Level*       | Profondeur maximum des sous-dossiers indiquée par la valeur *n*.  |
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.         |
 
 ### tty
 
@@ -463,11 +463,11 @@ tty
 
 Voici les options disponibles :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *-s*			| *silent*		| N'affiche rien, retourne uniquement la valeur de retour.			|
-| *--help*		| *help*		| Affiche l'aide de la commande.									|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *-s*          | *silent*      | N'affiche rien, retourne uniquement la valeur de retour.          |
+| *--help*      | *help*        | Affiche l'aide de la commande.                                    |
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.         |
 
 ### type
 {{Primitive du shell}}
@@ -513,10 +513,10 @@ users
 
 Voici les options disponibles :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *--help*		| *help*		| Affiche l'aide de la commande.									|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *--help*      | *help*        | Affiche l'aide de la commande.                                    |
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.         |
 
 ### w
 ((Who))
@@ -547,11 +547,11 @@ whereis commande
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 								|
-| :------------	| :------------	| :------------------------------------	|
-| *-b*			| *binaire*		| Recherche uniquement les binaires.	|
-| *-m*			| *manual*		| Recherche uniquement les manuels.		|
-| *-s*			| *source*		| Recherche uniquement les sources.		|
+| Option        | Signification | Détail                                |
+| :------------ | :------------ | :------------------------------------ |
+| *-b*          | *binaire*     | Recherche uniquement les binaires.    |
+| *-m*          | *manual*      | Recherche uniquement les manuels.     |
+| *-s*          | *source*      | Recherche uniquement les sources.     |
 
 ### which
 ((Which))
@@ -564,9 +564,9 @@ which commande
 
 Voici les options disponibles :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *-a*			| *all*			| Affiche tous les chemins correspondant à chaque argument.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *-a*          | *all*         | Affiche tous les chemins correspondant à chaque argument.         |
 
 ### who
 ((Who))
@@ -579,11 +579,11 @@ who -H
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *-a*			| *all*			| Affiche toutes les informations.									|
-| *-b*			| *boot*		| Indique la date et l'heure du dernier démarrage de la machine.	|
-| *-H*			| *Head*		| Ajoute l'intitulé de chaque colonne du tableau affiché.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *-a*          | *all*         | Affiche toutes les informations.                                  |
+| *-b*          | *boot*        | Indique la date et l'heure du dernier démarrage de la machine.    |
+| *-H*          | *Head*        | Ajoute l'intitulé de chaque colonne du tableau affiché.           |
 
 ### whoami
 ((Who am i))
@@ -596,10 +596,10 @@ whoami
 
 Voici les options disponibles :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *--help*		| *help*		| Affiche l'aide de la commande.									|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *--help*      | *help*        | Affiche l'aide de la commande.                                    |
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.         |
 
 ## Naviguer dans l'arborescence
 
@@ -614,16 +614,16 @@ cd chemin
 
 Voici quelques exemples d'interactions :
 
-| Commande 		| Signification															|
-| :------------	| :-------------------------------------------------------------------- |
-| `cd`			| Revient directement dans le dossier *home* de l'utilisateur courant.	|
-| `cd ~`		| Idem.																	|
-| `cd -`		| Revient au dossier précédemment visité.								|
-| `cd ~login`	| Permet de se déplacer dans un dossier utilisateur.					|
-| `cd /`		| Racine du système.													|
-| `cd ..`		| Remonte au dossier parent.											|
-| `cd ../..`	| Remonte de deux dossiers parents.										|
-| `cd chemin`	| Permet de se déplacer à l'endroit voulu (chemin absolu ou relatif).	|
+| Commande      | Signification                                                         |
+| :------------ | :-------------------------------------------------------------------- |
+| `cd`          | Revient directement dans le dossier *home* de l'utilisateur courant.  |
+| `cd ~`        | Idem.                                                                 |
+| `cd -`        | Revient au dossier précédemment visité.                               |
+| `cd ~login`   | Permet de se déplacer dans un dossier utilisateur.                    |
+| `cd /`        | Racine du système.                                                    |
+| `cd ..`       | Remonte au dossier parent.                                            |
+| `cd ../..`    | Remonte de deux dossiers parents.                                     |
+| `cd chemin`   | Permet de se déplacer à l'endroit voulu (chemin absolu ou relatif).   |
 
 ## Editeurs de texte
 
@@ -645,32 +645,32 @@ nano fichier
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 																	|
-| :------------	| :------------	| :------------------------------------------------------------------------	|
-| *-B*			| *Backup*		| Un autre fichier, avec le suffixe *~*, sera créé à chaque sauvegarde.		|
-| *-E*			| *tabstospaces*| Converti les tabulations en espaces.										|
-| *-c*			| *const*		| Affiche constamment la position du curseur.								|
-| *-i*			| *autoindent*	| Indente les nouvelles lignes, très utile pour l'édition de code.			|
-| *-m*			| *mouse*		| Active le support de la souris.											|
-| *-v*			| *view*		| Ouvre le fichier en lecture seule.										|
+| Option        | Signification | Détail                                                                    |
+| :------------ | :------------ | :------------------------------------------------------------------------ |
+| *-B*          | *Backup*      | Un autre fichier, avec le suffixe *~*, sera créé à chaque sauvegarde.     |
+| *-E*          | *tabstospaces*| Converti les tabulations en espaces.                                      |
+| *-c*          | *const*       | Affiche constamment la position du curseur.                               |
+| *-i*          | *autoindent*  | Indente les nouvelles lignes, très utile pour l'édition de code.          |
+| *-m*          | *mouse*       | Active le support de la souris.                                           |
+| *-v*          | *view*        | Ouvre le fichier en lecture seule.                                        |
 
 Une fois `nano` ouvert, un menu en bas de l'écran vous indique les touches de raccourcis. Le symbole « ^ » représente la touche <kbd>CTRL</kbd>.
 
-| Raccourci							| Détail																				|
-| :--------------------------------	| :------------------------------------------------------------------------------------	|
-| <kbd>CTRL</kbd> + <kbd>A</kbd>	| Envoi le curseur au début de la ligne.												|
-| <kbd>CTRL</kbd> + <kbd>E</kbd>	| Envoi le curseur à la fin de la ligne.												|
-| <kbd>CTRL</kbd> + <kbd>Y</kbd>	| Remonte d'une page.																	|
-| <kbd>CTRL</kbd> + <kbd>V</kbd>	| Descend d'une page.																	|
-| <kbd>CTRL</kbd> + <kbd>_</kbd>	| Permet de se rendre aux numéros de ligne et colonne indiquées.						|
-| <kbd>CTRL</kbd> + <kbd>C</kbd>	| Affiche les numéros de ligne, colonne et caractère à partir de la position du curseur.|
-| <kbd>CTRL</kbd> + <kbd>W</kbd>	| Pour lancer une recherche.															|
-| <kbd>CTRL</kbd> + <kbd>D</kbd>	| Supprime un caractère.																|
-| <kbd>CTRL</kbd> + <kbd>K</kbd>	| Coupe la ligne.																		|
-| <kbd>CTRL</kbd> + <kbd>U</kbd>	| Colle.																				|
-| <kbd>CTRL</kbd> + <kbd>O</kbd>	| Sauvegarde un fichier.																|
-| <kbd>CTRL</kbd> + <kbd>X</kbd>	| Quitte `nano` ou son aide.															|
-| <kbd>CTRL</kbd> + <kbd>G</kbd>	| Affiche l'aide, <kbd>CTRL</kbd> + <kbd>X</kbd> pour revenir au fichier.				|
+| Raccourci                         | Détail                                                                                |
+| :-------------------------------- | :------------------------------------------------------------------------------------ |
+| <kbd>CTRL</kbd> + <kbd>A</kbd>    | Envoi le curseur au début de la ligne.                                                |
+| <kbd>CTRL</kbd> + <kbd>E</kbd>    | Envoi le curseur à la fin de la ligne.                                                |
+| <kbd>CTRL</kbd> + <kbd>Y</kbd>    | Remonte d'une page.                                                                   |
+| <kbd>CTRL</kbd> + <kbd>V</kbd>    | Descend d'une page.                                                                   |
+| <kbd>CTRL</kbd> + <kbd>_</kbd>    | Permet de se rendre aux numéros de ligne et colonne indiquées.                        |
+| <kbd>CTRL</kbd> + <kbd>C</kbd>    | Affiche les numéros de ligne, colonne et caractère à partir de la position du curseur.|
+| <kbd>CTRL</kbd> + <kbd>W</kbd>    | Pour lancer une recherche.                                                            |
+| <kbd>CTRL</kbd> + <kbd>D</kbd>    | Supprime un caractère.                                                                |
+| <kbd>CTRL</kbd> + <kbd>K</kbd>    | Coupe la ligne.                                                                       |
+| <kbd>CTRL</kbd> + <kbd>U</kbd>    | Colle.                                                                                |
+| <kbd>CTRL</kbd> + <kbd>O</kbd>    | Sauvegarde un fichier.                                                                |
+| <kbd>CTRL</kbd> + <kbd>X</kbd>    | Quitte `nano` ou son aide.                                                            |
+| <kbd>CTRL</kbd> + <kbd>G</kbd>    | Affiche l'aide, <kbd>CTRL</kbd> + <kbd>X</kbd> pour revenir au fichier.               |
 
 #### configuration
 
@@ -715,14 +715,14 @@ head -vn3 fichier
 
 Voici les options disponibles :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *-c* n		| 				| Affiche les *n* premiers caractères du fichier.					|
-| *-n* n		| 				| Affiche les *n* premières lignes du fichier.						|
-| *-q*			| *quiet*		| Les noms de fichiers ne sont jamais affichés.						|
-| *-v*			| *verbose*		| Les noms de fichiers sont toujours affichés.						|
-| *--help*		| *help*		| Affiche l'aide de la commande.									|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *-c* n        |               | Affiche les *n* premiers caractères du fichier.                   |
+| *-n* n        |               | Affiche les *n* premières lignes du fichier.                      |
+| *-q*          | *quiet*       | Les noms de fichiers ne sont jamais affichés.                     |
+| *-v*          | *verbose*     | Les noms de fichiers sont toujours affichés.                      |
+| *--help*      | *help*        | Affiche l'aide de la commande.                                    |
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.         |
 
 ### less
 
@@ -734,16 +734,16 @@ less fichier
 
 Voici les principales touches pour interagir avec le fichier affiché :
 
-| Touche 											| Evènement																										|
-| :------------------------------------------------	| :------------------------------------------------------------------------------------------------------------ |
-| <kbd>pageDown</kbd> ou <kbd>Espace</kbd>			| Descend d'une page.																							|
-| <kbd>pageUp</kbd> ou <kbd>b</kbd>					| Remonte d'une page.																							|
-| <kbd>↓</kbd> ou <kbd>j</kbd> ou <kbd>ENTRÉE</kbd>	| Descend d'une ligne.																							|
-| <kbd>↑</kbd> ou <kbd>y</kbd>						| Remonte d'une ligne.																							|
-| <kbd>q</kbd> ou <kbd>Q</kbd>						| Quitte le programme.																							|
-| <kbd>=</kbd>										| Indique le numéro de ligne, le pourcentage parcouru, etc.														|
-| <kbd>h</kbd> ou <kbd>H</kbd>						| Affiche l'aide, <kbd>q</kbd> pour revenir au contenu du fichier.												|
-| <kbd>/</kbd>										| Lance une recherche. Tapez <kbd>n</kbd> pour afficher le résultat suivant et <kbd>N</kbd> pour le précédent.	|
+| Touche                                            | Evènement                                                                                                     |
+| :------------------------------------------------ | :------------------------------------------------------------------------------------------------------------ |
+| <kbd>pageDown</kbd> ou <kbd>Espace</kbd>          | Descend d'une page.                                                                                           |
+| <kbd>pageUp</kbd> ou <kbd>b</kbd>                 | Remonte d'une page.                                                                                           |
+| <kbd>↓</kbd> ou <kbd>j</kbd> ou <kbd>ENTRÉE</kbd> | Descend d'une ligne.                                                                                          |
+| <kbd>↑</kbd> ou <kbd>y</kbd>                      | Remonte d'une ligne.                                                                                          |
+| <kbd>q</kbd> ou <kbd>Q</kbd>                      | Quitte le programme.                                                                                          |
+| <kbd>=</kbd>                                      | Indique le numéro de ligne, le pourcentage parcouru, etc.                                                     |
+| <kbd>h</kbd> ou <kbd>H</kbd>                      | Affiche l'aide, <kbd>q</kbd> pour revenir au contenu du fichier.                                              |
+| <kbd>/</kbd>                                      | Lance une recherche. Tapez <kbd>n</kbd> pour afficher le résultat suivant et <kbd>N</kbd> pour le précédent.  |
 
 ### more
 
@@ -810,16 +810,16 @@ cp -r chemin/dossier/ chemin/autre-dossier/
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 																	|
-| :------------	| :------------	| :------------------------------------------------------------------------	|
-| *-i*			| *interactive*	| Demande une confirmation pour chaque action.								|
-| *-n*			| *no-clobber*	| N'écrase pas un fichier existant.											|
-| *-p*			| *preserve*	| Préserve les attributs des fichiers copiés.								|
-| *-R* ou *-r*	| *recursive*	| Permet de copier un dossier et tout son contenu récursivement.			|
-| *-u*			| *update*		| Copie un fichier si il est plus récent ou inexistant.						|
-| *-v*			| *verbose*		| Affiche chaque action.													|
-| *--help*		| *help*		| Affiche l'aide de la commande.											|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.					|
+| Option        | Signification | Détail                                                                    |
+| :------------ | :------------ | :------------------------------------------------------------------------ |
+| *-i*          | *interactive* | Demande une confirmation pour chaque action.                              |
+| *-n*          | *no-clobber*  | N'écrase pas un fichier existant.                                         |
+| *-p*          | *preserve*    | Préserve les attributs des fichiers copiés.                               |
+| *-R* ou *-r*  | *recursive*   | Permet de copier un dossier et tout son contenu récursivement.            |
+| *-u*          | *update*      | Copie un fichier si il est plus récent ou inexistant.                     |
+| *-v*          | *verbose*     | Affiche chaque action.                                                    |
+| *--help*      | *help*        | Affiche l'aide de la commande.                                            |
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.                 |
 
 ### ln
 ((Link))
@@ -909,14 +909,14 @@ rm fichier-A fichier-B
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *-f*			| *force*		| Comportement inverse à l'option *i*.								|
-| *-i*			| *interactive*	| Demande une confirmation pour chaque fichier.						|
-| *-R* ou *-r*	| *recursive*	| Supprime le dossier et son contenu.								|
-| *-v*			| *verbose*		| Affiche chaque action.											|
-| *--help*		| *help*		| Affiche l'aide de la commande.									|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *-f*          | *force*       | Comportement inverse à l'option *i*.                              |
+| *-i*          | *interactive* | Demande une confirmation pour chaque fichier.                     |
+| *-R* ou *-r*  | *recursive*   | Supprime le dossier et son contenu.                               |
+| *-v*          | *verbose*     | Affiche chaque action.                                            |
+| *--help*      | *help*        | Affiche l'aide de la commande.                                    |
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.         |
 
 ### rmdir
 ((Remove directories))
@@ -974,13 +974,13 @@ scp -P 910 login@adresse-ip:dossier/fichier dossier-de-destination/fichier
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail																					|
-| :------------	| :------------	| :----------------------------------------------------------------------------------------	|
-| *-P*			| *Port*		| Permet de spécifier le port de connexion `ssh`.											|
-| *-p*			| *preserves*	| Préserve les dates de modifications et d'accès ainsi que les droits du fichier original.	|
-| *-q*			| *quiet*		| Masque la barre de progression ainsi que tous les autres messages.						|
-| *-r*			| *recursive*	| Copie les dossiers et leurs contenus de manière récursive.								|
-| *-v*			| *verbose*		| Affiche les messages en mode *debug* pour localiser les problèmes de connexion.			|
+| Option        | Signification | Détail                                                                                    |
+| :------------ | :------------ | :---------------------------------------------------------------------------------------- |
+| *-P*          | *Port*        | Permet de spécifier le port de connexion `ssh`.                                           |
+| *-p*          | *preserves*   | Préserve les dates de modifications et d'accès ainsi que les droits du fichier original.  |
+| *-q*          | *quiet*       | Masque la barre de progression ainsi que tous les autres messages.                        |
+| *-r*          | *recursive*   | Copie les dossiers et leurs contenus de manière récursive.                                |
+| *-v*          | *verbose*     | Affiche les messages en mode *debug* pour localiser les problèmes de connexion.           |
 
 ### split
 
@@ -1040,15 +1040,15 @@ AAAAMMJJhhmm se décompose de la façon suivante :
 
 Voici les principales options :
 
-| Option 		| Signification			| Détail 																|
-| :------------	| :--------------------	| :-------------------------------------------------------------------- |
-| *-d*			| *date*				| Permet de changer la date : AAAAMMJJ (l'heure sera initialisée à 0).	|
-| *-t*			| *time*				| Permet de changer la date et l'heure : AAAAMMJJhhmm(ss).				|
-| *-a*			| *access time*			| Change uniquement la date d'accès du fichier.							|
-| *-c*			| *no create*			| Aucun fichier ne sera créé.											|
-| *-m*			| *modification time*	| Change uniquement la date de modification du fichier.					|
-| *--help*		| *help*				| Affiche l'aide de la commande.										|
-| *--version*	| *version*				| Indique la version actuellement installée sur le système.				|
+| Option        | Signification         | Détail                                                                |
+| :------------ | :-------------------- | :-------------------------------------------------------------------- |
+| *-d*          | *date*                | Permet de changer la date : AAAAMMJJ (l'heure sera initialisée à 0).  |
+| *-t*          | *time*                | Permet de changer la date et l'heure : AAAAMMJJhhmm(ss).              |
+| *-a*          | *access time*         | Change uniquement la date d'accès du fichier.                         |
+| *-c*          | *no create*           | Aucun fichier ne sera créé.                                           |
+| *-m*          | *modification time*   | Change uniquement la date de modification du fichier.                 |
+| *--help*      | *help*                | Affiche l'aide de la commande.                                        |
+| *--version*   | *version*             | Indique la version actuellement installée sur le système.             |
 
 ## Manipulation de texte
 
@@ -1070,13 +1070,13 @@ grep "chaine de caractère" fichier
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 														|
-| :------------	| :------------	| :------------------------------------------------------------	|
-| *-i*			| *ignore case*	| Ne prend pas en compte la casse.								|
-| *-n*			| *number*		| Affiche le numéro de ligne de chaque correspondance.			|
-| *-v*			| *invert match*| Inverse le résultat demandé dans la chaine de caractère.		|
-| *-r*			| *recursive*	| Recherche dans les sous-dossiers.								|
-| *-E*			| *Extended*	| Permet d'utiliser les expressions régulières (voir `egrep`).	|
+| Option        | Signification | Détail                                                        |
+| :------------ | :------------ | :------------------------------------------------------------ |
+| *-i*          | *ignore case* | Ne prend pas en compte la casse.                              |
+| *-n*          | *number*      | Affiche le numéro de ligne de chaque correspondance.          |
+| *-v*          | *invert match*| Inverse le résultat demandé dans la chaine de caractère.      |
+| *-r*          | *recursive*   | Recherche dans les sous-dossiers.                             |
+| *-E*          | *Extended*    | Permet d'utiliser les expressions régulières (voir `egrep`).  |
 
 ### join
 
@@ -1109,9 +1109,9 @@ ID_2 Luc
 ID_3 Maurice
 
 # fichierNom
-DUPOND		ID_1
-DUCHAMPS	ID_2
-BELMON		ID_3
+DUPOND      ID_1
+DUCHAMPS    ID_2
+BELMON      ID_3
 ```
 
 Il faudra indiquer à la commande, pour chaque fichier, le numéro de la colonne où trouver l'information, comme ceci :
@@ -1144,13 +1144,13 @@ sort fichier -o fichier-de-sortie
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 																|
-| :------------	| :------------	| :--------------------------------------------------------------------	|
-| *-o* fichier	| *output*		| Ecrit le résultat dans un fichier de sortie, le nom doit être précisé.|
-| *-n*			| *numeric*		| Tri numérique du résultat.											|
-| *-R*			| *Random*		| Ordre aléatoire.														|
-| *-r*			| *reverse*		| Inverse l'ordre du tri.												|
-| *-u*			| *unique*		| Rend unique les résultats, évite de passer par la commande idoine.	|
+| Option        | Signification | Détail                                                                |
+| :------------ | :------------ | :-------------------------------------------------------------------- |
+| *-o* fichier  | *output*      | Ecrit le résultat dans un fichier de sortie, le nom doit être précisé.|
+| *-n*          | *numeric*     | Tri numérique du résultat.                                            |
+| *-R*          | *Random*      | Ordre aléatoire.                                                      |
+| *-r*          | *reverse*     | Inverse l'ordre du tri.                                               |
+| *-u*          | *unique*      | Rend unique les résultats, évite de passer par la commande idoine.    |
 
 ### tr
 ((Translate)) ((Delete))
@@ -1177,14 +1177,14 @@ sort fichier | uniq
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *-c*			| *count*		| Préfixe les lignes par le nombre d'occurrences.					|
-| *-d*			| *repeated*	| Affiche uniquement les doublons.									|
-| *-i*			| *ignore-case*	| Ne prend pas en compte la casse.									|
-| *-u*			| *unique*		| N'affiche que les lignes uniques.									|
-| *--help*		| *help*		| Affiche l'aide de la commande.									|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *-c*          | *count*       | Préfixe les lignes par le nombre d'occurrences.                   |
+| *-d*          | *repeated*    | Affiche uniquement les doublons.                                  |
+| *-i*          | *ignore-case* | Ne prend pas en compte la casse.                                  |
+| *-u*          | *unique*      | N'affiche que les lignes uniques.                                 |
+| *--help*      | *help*        | Affiche l'aide de la commande.                                    |
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.         |
 
 ### wc
 ((Word count))
@@ -1197,15 +1197,15 @@ wc fichier
 
 Voici les options disponibles :
 
-| Option 		| Signification			| Détail 														|
-| :------------	| :--------------------	| :------------------------------------------------------------	|
-| *-c*			| *bytes*				| Compte les octets.											|
-| *-m*			| *char*				| Compte les caractères.										|
-| *-l*			| *lines*				| Compte le nombre de lignes d'un fichier, y compris les vides.	|
-| *-L*			| *max-lines-lenght*	| Affiche le nombre de caractères de la plus longue ligne.		|
-| *-w*			| *words*				| Compte les mots.												|
-| *--help*		| *help*				| Affiche l'aide de la commande.								|
-| *--version*	| *version*				| Indique la version actuellement installée sur le système.		|
+| Option        | Signification         | Détail                                                        |
+| :------------ | :-------------------- | :------------------------------------------------------------ |
+| *-c*          | *bytes*               | Compte les octets.                                            |
+| *-m*          | *char*                | Compte les caractères.                                        |
+| *-l*          | *lines*               | Compte le nombre de lignes d'un fichier, y compris les vides. |
+| *-L*          | *max-lines-lenght*    | Affiche le nombre de caractères de la plus longue ligne.      |
+| *-w*          | *words*               | Compte les mots.                                              |
+| *--help*      | *help*                | Affiche l'aide de la commande.                                |
+| *--version*   | *version*             | Indique la version actuellement installée sur le système.     |
 
 ## Commandes pour la console
 
@@ -1290,10 +1290,10 @@ printenv PATH MAIL
 
 Voici les options disponibles :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *--help*		| *help*		| Affiche l'aide de la commande.									|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *--help*      | *help*        | Affiche l'aide de la commande.                                    |
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.         |
 
 ### reset
 
@@ -1375,26 +1375,26 @@ find -name index.html -ls
 
 #### Autres options
 
-| Option 		| Détail 																					|
-| :------------	| :----------------------------------------------------------------------------------------	|
-| *-cmin* -1440	| Recherche les fichiers modifiés ces dernières 24H.										|
-| *-cmin* +1440	| Recherche les fichiers modifiés au-delà des dernières 24H.								|
-| *-daystart*	| Utilisé avec *ctime*, ne passe pas la journée précédente mais reste sur celle en cours.	|
-| *-atime* -n	| Sélectionne les fichiers dont la date d'accès a été changée ces dernières n*24H.			|
-| *-ctime* -n	| Sélectionne les fichiers dont la date de statut a été changé ces dernières n*24H.			|
-| *-mtime* -n	| Sélectionne les fichiers dont la date de modification a été changé ces dernières n*24H.	|
+| Option        | Détail                                                                                    |
+| :------------ | :---------------------------------------------------------------------------------------- |
+| *-cmin* -1440 | Recherche les fichiers modifiés ces dernières 24H.                                        |
+| *-cmin* +1440 | Recherche les fichiers modifiés au-delà des dernières 24H.                                |
+| *-daystart*   | Utilisé avec *ctime*, ne passe pas la journée précédente mais reste sur celle en cours.   |
+| *-atime* -n   | Sélectionne les fichiers dont la date d'accès a été changée ces dernières n*24H.          |
+| *-ctime* -n   | Sélectionne les fichiers dont la date de statut a été changé ces dernières n*24H.         |
+| *-mtime* -n   | Sélectionne les fichiers dont la date de modification a été changé ces dernières n*24H.   |
 
 ##### Quelques précisions s'imposent :
 
-- *-atime*		: principalement pour vérifier les accès en lecture d'un fichier.
-- *-ctime*		: globalement, prend en compte n'importe quel changement sur le fichier.
-- *-mtime*		: modification directe du fichier, son contenu a été modifié.
+- *-atime*      : principalement pour vérifier les accès en lecture d'un fichier.
+- *-ctime*      : globalement, prend en compte n'importe quel changement sur le fichier.
+- *-mtime*      : modification directe du fichier, son contenu a été modifié.
 
 #### Manipulation des résultats
 
-- `find -name "*.jpg" -printf "%p - %u"`		: formate le résultat.
-- `find -name "*.jpg" -delete`					: suppression sans confirmation.
-- `find -name "*.jpg" -exec chmod 600 {} \;`	: exécute une commande.
+- `find -name "*.jpg" -printf "%p - %u"`        : formate le résultat.
+- `find -name "*.jpg" -delete`                  : suppression sans confirmation.
+- `find -name "*.jpg" -exec chmod 600 {} \;`    : exécute une commande.
 
 ### locate
 
@@ -1467,13 +1467,13 @@ tar -xvf nom-de-l-archive.tar -C dossier-de-destination/
 
 Voici les principales options :
 
-| Option 				| Signification	| Détail 											|
-| :--------------------	| :------------	| :------------------------------------------------	|
-| *-c*					| *create*		| Option obligatoire pour créer un fichier *tar*.	|
-| *-v*					| *verbose*		| Affiche les détails de l'opération en cours.		|
-| *-f*					| *file*		| Option obligatoire pour préciser les fichiers.	|
-| *-t*					| *list*		| Permet de lister les fichiers d'une archive.		|
-| *-a*					| *append*		| Ajoute des fichiers dans une archive.				|
+| Option                | Signification | Détail                                            |
+| :-------------------- | :------------ | :------------------------------------------------ |
+| *-c*                  | *create*      | Option obligatoire pour créer un fichier *tar*.   |
+| *-v*                  | *verbose*     | Affiche les détails de l'opération en cours.      |
+| *-f*                  | *file*        | Option obligatoire pour préciser les fichiers.    |
+| *-t*                  | *list*        | Permet de lister les fichiers d'une archive.      |
+| *-a*                  | *append*      | Ajoute des fichiers dans une archive.             |
 
 On a vu plus haut les commandes de compression. Il est possible d'utiliser cette commande pour archiver et compresser, dans le même temps, une archive.
 
@@ -1588,13 +1588,13 @@ ping www.google.com
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 																		|
-| :------------	| :------------	| :----------------------------------------------------------------------------	|
-| *-a*			| *audible ping*| Un son est émis à chaque réception.											|
-| *-c* n		| *count*		| Arrêt de la commande quand le nombre *n* demandé est atteint.					|
-| *-i*			| *interval*	| Délai entre chaque envoi.														|
-| *-v*			| *verbose*		| Affiche les détails des transmissions à la fin de la commande.				|
-| *-w* n		| *deadline*	| Arrêt de la commande au bout des *n* secondes indiquées.						|
+| Option        | Signification | Détail                                                                        |
+| :------------ | :------------ | :---------------------------------------------------------------------------- |
+| *-a*          | *audible ping*| Un son est émis à chaque réception.                                           |
+| *-c* n        | *count*       | Arrêt de la commande quand le nombre *n* demandé est atteint.                 |
+| *-i*          | *interval*    | Délai entre chaque envoi.                                                     |
+| *-v*          | *verbose*     | Affiche les détails des transmissions à la fin de la commande.                |
+| *-w* n        | *deadline*    | Arrêt de la commande au bout des *n* secondes indiquées.                      |
 
 ### ssh
 ((Secure shell))
@@ -1624,15 +1624,15 @@ wget http://www.adresse-web.com
 
 Voici les principales options :
 
-| Option 			| Signification		| Détail 																						|
-| :----------------	| :----------------	| :--------------------------------------------------------------------------------------------	|
-| *-i*				| *input-file*		| Récupère les adresses du fichier spécifié.													|
-| *-c*				| *continue*		| Reprend un téléchargement interrompu.															|
-| *-S*				| *Server-response*	| Affiche les messages envoyés par les serveurs FTP ou HTTP.									|
-| *-r*				| *recursive*		| Active les téléchargements récursifs.															|
-| *-l*				| *level*			| Indique la profondeur maximale du téléchargement récursif (option `r`).						|
-| *-p*				| *pages-requisites*| Permet d'obtenir toutes les images (etc.) nécessaire à l'affichage complet de la page HTML.	|
-| *--limit-rate*=n	| *--limit-rate*	| Limite le téléchargement selon le *n* indiqué.												|
+| Option            | Signification     | Détail                                                                                        |
+| :---------------- | :---------------- | :-------------------------------------------------------------------------------------------- |
+| *-i*              | *input-file*      | Récupère les adresses du fichier spécifié.                                                    |
+| *-c*              | *continue*        | Reprend un téléchargement interrompu.                                                         |
+| *-S*              | *Server-response* | Affiche les messages envoyés par les serveurs FTP ou HTTP.                                    |
+| *-r*              | *recursive*       | Active les téléchargements récursifs.                                                         |
+| *-l*              | *level*           | Indique la profondeur maximale du téléchargement récursif (option `r`).                       |
+| *-p*              | *pages-requisites*| Permet d'obtenir toutes les images (etc.) nécessaire à l'affichage complet de la page HTML.   |
+| *--limit-rate*=n  | *--limit-rate*    | Limite le téléchargement selon le *n* indiqué.                                                |
 
 Pour récupérer tous les fichiers d'un FTP de manière récursive et en conservant l'arborescence :
 
@@ -1654,10 +1654,10 @@ bc
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 										|
-| :------------	| :------------	| :--------------------------------------------	|
-| *-h*			| *help*		| Affiche l'aide.								|
-| *-v*			| *version*		| Affiche la version de la commande.			|
+| Option        | Signification | Détail                                        |
+| :------------ | :------------ | :-------------------------------------------- |
+| *-h*          | *help*        | Affiche l'aide.                               |
+| *-v*          | *version*     | Affiche la version de la commande.            |
 
 ### tee
 
@@ -1669,11 +1669,11 @@ ls -l | tee -a fichier
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *-a* file		| *append*		| Ajoute les données de sortie à la fin du fichier indiqué.			|
-| *--help*		| *help*		| Affiche l'aide de la commande.									|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *-a* file     | *append*      | Ajoute les données de sortie à la fin du fichier indiqué.         |
+| *--help*      | *help*        | Affiche l'aide de la commande.                                    |
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.         |
 
 ## Gérer les tâches de fond
 
@@ -1708,13 +1708,13 @@ jobs
 
 Voici les options disponibles :
 
-| Option 		| Détail 																				|
-| :------------	| :------------------------------------------------------------------------------------	|
-| *-l*			| Affiche le PID en plus des autres informations.										|
-| *-n*			| Affiche uniquement les processus qui ont changé d'état depuis le dernier affichage.	|
-| *-p*			| Affiche uniquement les PID des commandes actuellement en tâche de fond.				|
-| *-r*			| Restreint l'affichage aux tâches en cours d'exécution.								|
-| *-s*			| Restreint l'affichage aux tâches stoppées.											|
+| Option        | Détail                                                                                |
+| :------------ | :------------------------------------------------------------------------------------ |
+| *-l*          | Affiche le PID en plus des autres informations.                                       |
+| *-n*          | Affiche uniquement les processus qui ont changé d'état depuis le dernier affichage.   |
+| *-p*          | Affiche uniquement les PID des commandes actuellement en tâche de fond.               |
+| *-r*          | Restreint l'affichage aux tâches en cours d'exécution.                                |
+| *-s*          | Restreint l'affichage aux tâches stoppées.                                            |
 
 ## Commandes système
 
@@ -1736,11 +1736,11 @@ sudo halt
 
 Voici les principales options :
 
-| Option 		| Détail 															|
-| :------------	| :----------------------------------------------------------------	|
-| *-d*			| N'écrit pas dans le fichier `/var/log/wtmp`.						|
-| *-f*			| N'appelle pas la commande `shutdown`.								|
-| *-w*			| Ecrit dans le fichier `/var/log/wtmp` mais ne s'éteint pas.		|
+| Option        | Détail                                                            |
+| :------------ | :---------------------------------------------------------------- |
+| *-d*          | N'écrit pas dans le fichier `/var/log/wtmp`.                      |
+| *-f*          | N'appelle pas la commande `shutdown`.                             |
+| *-w*          | Ecrit dans le fichier `/var/log/wtmp` mais ne s'éteint pas.       |
 
 ### kill
 {{Primitive du shell}} ((Kill))
@@ -1768,13 +1768,13 @@ killall commande
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 																							|
-| :------------	| :------------	| :------------------------------------------------------------------------------------------------	|
-| *-I*			| *Ignore-case*	| Le nom de la commande n'est pas sensible à la casse.												|
-| *-i*			| *interactive*	| Demande de confirmation pour arrêter les processus.												|
-| *-l*			| *list*		| Liste tous les processus de la commande spécifiée en paramètre.									|
-| *-u*			| *user*		| N'arrête que les commandes de l'utilisateur spécifié (le nom de la commande est alors optionnel).	|
-| *-V*			| *Version*		| Indique la version actuellement installée sur le système.											|
+| Option        | Signification | Détail                                                                                            |
+| :------------ | :------------ | :------------------------------------------------------------------------------------------------ |
+| *-I*          | *Ignore-case* | Le nom de la commande n'est pas sensible à la casse.                                              |
+| *-i*          | *interactive* | Demande de confirmation pour arrêter les processus.                                               |
+| *-l*          | *list*        | Liste tous les processus de la commande spécifiée en paramètre.                                   |
+| *-u*          | *user*        | N'arrête que les commandes de l'utilisateur spécifié (le nom de la commande est alors optionnel). |
+| *-V*          | *Version*     | Indique la version actuellement installée sur le système.                                         |
 
 ### lspci
 ((List PCI))
@@ -1796,11 +1796,11 @@ lsusb
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *-v*			| *verbose*		| Affiche des informations plus détaillées.							|
-| *-t*			| *tree*		| Arbre hiérarchique, l'option *v* est inopérante dans ce cas.		|
-| *-V*			| *Version*		| Indique la version actuellement installée sur le système.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *-v*          | *verbose*     | Affiche des informations plus détaillées.                         |
+| *-t*          | *tree*        | Arbre hiérarchique, l'option *v* est inopérante dans ce cas.      |
+| *-V*          | *Version*     | Indique la version actuellement installée sur le système.         |
 
 ### poweroff
 ((Power Off))
@@ -1828,12 +1828,12 @@ ps -C chrome
 
 Voici les principales options :
 
-| Option 		| Détail 											|
-| :------------	| :------------------------------------------------	|
-| *-ef*			| Liste tous les processus.							|
-| *-ejh*		| Affiche les processus en arbre de parenté.		|
-| *-U* user		| Liste les processus de l'utilisateur indiqué.		|
-| *-C* name		| Affiche les processus en fonction du nom indiqué.	|
+| Option        | Détail                                            |
+| :------------ | :------------------------------------------------ |
+| *-ef*         | Liste tous les processus.                         |
+| *-ejh*        | Affiche les processus en arbre de parenté.        |
+| *-U* user     | Liste les processus de l'utilisateur indiqué.     |
+| *-C* name     | Affiche les processus en fonction du nom indiqué. |
 
 ### reboot
 
@@ -1845,11 +1845,11 @@ sudo reboot
 
 Voici les principales options :
 
-| Option 		| Détail 															|
-| :------------	| :----------------------------------------------------------------	|
-| *-d*			| N'écrit pas dans le fichier `/var/log/wtmp`.						|
-| *-f*			| N'appelle pas la commande `shutdown`.								|
-| *-w*			| Ecrit dans le fichier `/var/log/wtmp` mais ne redémarre pas.		|
+| Option        | Détail                                                            |
+| :------------ | :---------------------------------------------------------------- |
+| *-d*          | N'écrit pas dans le fichier `/var/log/wtmp`.                      |
+| *-f*          | N'appelle pas la commande `shutdown`.                             |
+| *-w*          | Ecrit dans le fichier `/var/log/wtmp` mais ne redémarre pas.      |
 
 ### shutdown
 
@@ -1861,11 +1861,11 @@ sudo shutdown -r -t 5 now
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 													|
-| :------------	| :------------	| :--------------------------------------------------------	|
-| *-h*			| *halt*		| Eteint la machine après `shutdown`.						|
-| *-r*			| *reboot*		| Redémarre la machine après `shutdown`.					|
-| *-t* n		| *time*		| Eteint la machine après le temps *n* indiqué en seconde.	|
+| Option        | Signification | Détail                                                    |
+| :------------ | :------------ | :-------------------------------------------------------- |
+| *-h*          | *halt*        | Eteint la machine après `shutdown`.                       |
+| *-r*          | *reboot*      | Redémarre la machine après `shutdown`.                    |
+| *-t* n        | *time*        | Eteint la machine après le temps *n* indiqué en seconde.  |
 
 ### tload
 ((Time load))
@@ -1878,12 +1878,12 @@ tload
 
 Voici les options disponibles :
 
-| Option 		| Signification	| Détail 													|
-| :------------	| :------------	| :--------------------------------------------------------	|
-| *-s* n		| *scale*		| Permet un redimensionnement à l'échelle *n* spécifiée.	|
-| *-d* n		| *delay*		| Mise à jour en *n* seconde de l'affichage.				|
-| *-h*			| *help*		| Affiche l'aide.											|
-| *-V*			| *Version*		| Indique la version actuellement installée sur le système.	|
+| Option        | Signification | Détail                                                    |
+| :------------ | :------------ | :-------------------------------------------------------- |
+| *-s* n        | *scale*       | Permet un redimensionnement à l'échelle *n* spécifiée.    |
+| *-d* n        | *delay*       | Mise à jour en *n* seconde de l'affichage.                |
+| *-h*          | *help*        | Affiche l'aide.                                           |
+| *-V*          | *Version*     | Indique la version actuellement installée sur le système. |
 
 ### top
 
@@ -1904,10 +1904,10 @@ uptime
 
 Voici les options disponibles :
 
-| Option 		| Signification	| Détail 													|
-| :------------	| :------------	| :--------------------------------------------------------	|
-| *-h*			| *help*		| Affiche l'aide.											|
-| *-V*			| *Version*		| Indique la version actuellement installée sur le système.	|
+| Option        | Signification | Détail                                                    |
+| :------------ | :------------ | :-------------------------------------------------------- |
+| *-h*          | *help*        | Affiche l'aide.                                           |
+| *-V*          | *Version*     | Indique la version actuellement installée sur le système. |
 
 ## Administration du système
 
@@ -1981,41 +1981,41 @@ sudo chmod u+rwx,g+r,o= fichier
 
 Globalement, on peut résumer les différentes possibilités avec le tableau suivant :
 
-| Lettre 		| Signification	| Détail 																				|
-| :------------	| :------------	| :------------------------------------------------------------------------------------	|
-| *a*			| *all*			| Affecte les droits à tout le monde (comportement par défaut).							|
-| *u*			| *user*		| Affecte les droits à l'utilisateur du fichier.										|
-| *g*			| *group*		| Affecte les droits au groupe du fichier.												|
-| *o*			| *other*		| Affecte les droits aux *autres* utilisateurs du fichier.								|
-| *+*			| *add*			| Ajoute des droits.																	|
-| *-*			| *del*			| Supprime des droits.																	|
-| *=*			| *equal*		| Ne change rien.																		|
-| *x*			| *execution*	| Concerne les droits d'exécution.														|
-| *X*			| *eXecution*	| Voir plus bas : « Précisions sur le drapeau X ».										|
-| *r*			| *read*		| Concerne les droits de lecture.														|
-| *w*			| *write*		| Concerne les droits d'écriture.														|
+| Lettre        | Signification | Détail                                                                                |
+| :------------ | :------------ | :------------------------------------------------------------------------------------ |
+| *a*           | *all*         | Affecte les droits à tout le monde (comportement par défaut).                         |
+| *u*           | *user*        | Affecte les droits à l'utilisateur du fichier.                                        |
+| *g*           | *group*       | Affecte les droits au groupe du fichier.                                              |
+| *o*           | *other*       | Affecte les droits aux *autres* utilisateurs du fichier.                              |
+| *+*           | *add*         | Ajoute des droits.                                                                    |
+| *-*           | *del*         | Supprime des droits.                                                                  |
+| *=*           | *equal*       | Ne change rien.                                                                       |
+| *x*           | *execution*   | Concerne les droits d'exécution.                                                      |
+| *X*           | *eXecution*   | Voir plus bas : « Précisions sur le drapeau X ».                                      |
+| *r*           | *read*        | Concerne les droits de lecture.                                                       |
+| *w*           | *write*       | Concerne les droits d'écriture.                                                       |
 
 La deuxième méthode (le résultat est de toute façon identique), utilise le système octal. Chaque « groupement » de droits (*user*, *group* et *other*) sera représenté par un chiffre et à chaque droit correspond une valeur :
 
-| Droit 	| Octal 	|
-| :--------	| :--------	|
-| *r*		| 4			|
-| *w*		| 2			|
-| *x*		| 1			|
-| *-*		| 0			|
+| Droit     | Octal     |
+| :-------- | :-------- |
+| *r*       | 4         |
+| *w*       | 2         |
+| *x*       | 1         |
+| *-*       | 0         |
 
 On ajoute les valeurs en fonction des droits que l'on veut attribuer :
 
-| Droit 	| Valeur 	| Binaire	|
-| :--------	| :--------	| :--------	|
-| *rwx*		| 4+2+1 = 7	| 111		|
-| *rw-*		| 4+2+0 = 6	| 110		|
-| *r-x*		| 4+0+1 = 5	| 101		|
-| *r--*		| 4+0+0 = 4	| 100		|
-| *-wx*		| 0+2+1 = 3	| 011		|
-| *-w-*		| 0+2+0 = 2	| 010		|
-| *--x*		| 0+0+1 = 1	| 001		|
-| *---*		| 0+0+0 = 0 | 000		|
+| Droit     | Valeur    | Binaire   |
+| :-------- | :-------- | :-------- |
+| *rwx*     | 4+2+1 = 7 | 111       |
+| *rw-*     | 4+2+0 = 6 | 110       |
+| *r-x*     | 4+0+1 = 5 | 101       |
+| *r--*     | 4+0+0 = 4 | 100       |
+| *-wx*     | 0+2+1 = 3 | 011       |
+| *-w-*     | 0+2+0 = 2 | 010       |
+| *--x*     | 0+0+1 = 1 | 001       |
+| *---*     | 0+0+0 = 0 | 000       |
 
 Il est à noté que le système octal fonctionne de la façon suivante : une lettre correspond à 1 et un tiret à 0 de façon à former un nombre en binaire sur 3 bits. La conversion de ce nombre en système décimal (base 10) donne la valeur cherchée. Ainsi, `rw-` donne le nombre binaire 110 qui est égal à 6 en décimal.
 
@@ -2029,14 +2029,14 @@ Produira les droits suivants : `rwxr-x---`.
 
 Les différentes options possibles sont :
 
-| Lettre 		| Signification	| Détail 																				|
-| :------------	| :------------	| :------------------------------------------------------------------------------------	|
-| *c*			| *changes*		| Similaire à l'option *verbose* mais uniquement quand il y a des changements effectués.|
-| *f*			| 				| Supprime la plupart des messages d'erreur de l'affichage du Terminal.					|
-| *v*			| *verbose*		| Affiche un retour de chaque fichier traité par la commande, qu’il soit modifié ou non.|
-| *R*			| *Recursive*	| Applique les changements de manière récursive.										|
-| *--help*		| *help*		| Affiche l'aide de la commande.														|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.								|
+| Lettre        | Signification | Détail                                                                                |
+| :------------ | :------------ | :------------------------------------------------------------------------------------ |
+| *c*           | *changes*     | Similaire à l'option *verbose* mais uniquement quand il y a des changements effectués.|
+| *f*           |               | Supprime la plupart des messages d'erreur de l'affichage du Terminal.                 |
+| *v*           | *verbose*     | Affiche un retour de chaque fichier traité par la commande, qu’il soit modifié ou non.|
+| *R*           | *Recursive*   | Applique les changements de manière récursive.                                        |
+| *--help*      | *help*        | Affiche l'aide de la commande.                                                        |
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.                             |
 
 #### Précisions sur le drapeau X
 
@@ -2084,12 +2084,12 @@ sudo chown :nouveau-groupe fichier
 
 `cron` est un processus qui permet d'automatiser des tâches à un moment précis et de manière répétée. La méthode la plus simple est de copier (ou déplacer) le script possédant les droits d'exécution dans un des dossiers qui sont utilisés par cette commande.
 
-| Dossier					| Exécution à				|
-| :------------------------	| :------------------------ |
-| `/etc/cron.hourly/`		| Chaque heure.				|
-| `/etc/cron.daily/`		| Chaque jour.				|
-| `/etc/cron.weekly/`		| Chaque semaine.			|
-| `/etc/cron.monthly/`		| Chaque mois.				|
+| Dossier                   | Exécution à               |
+| :------------------------ | :------------------------ |
+| `/etc/cron.hourly/`       | Chaque heure.             |
+| `/etc/cron.daily/`        | Chaque jour.              |
+| `/etc/cron.weekly/`       | Chaque semaine.           |
+| `/etc/cron.monthly/`      | Chaque mois.              |
 
 `cron` est en réalité constitué d'un démon : `crond`, c'est-à-dire un programme qui réside en mémoire et lance automatiquement des tâches en fonction de la table `cron`. Une commande : `crontab`, permet d'éditer la table des tâches à ordonnancer.
 
@@ -2097,11 +2097,11 @@ sudo chown :nouveau-groupe fichier
 
 Est la commande qui permet de lire et modifier le fichier *crontab*.
 
-| Option 		| Signification	| Détail 																					|
-| :------------	| :------------	| :----------------------------------------------------------------------------------------	|
-| *-e*			| *editor*		| Ouvre le fichier pour appliquer les modifications directement.							|
-| *-l*			| *list*		| Affiche les tâches programmées.															|
-| *-r*			| *removed*		| Supprime toutes les tâches programmées, immédiatement et sans demande de confirmation.	|
+| Option        | Signification | Détail                                                                                    |
+| :------------ | :------------ | :---------------------------------------------------------------------------------------- |
+| *-e*          | *editor*      | Ouvre le fichier pour appliquer les modifications directement.                            |
+| *-l*          | *list*        | Affiche les tâches programmées.                                                           |
+| *-r*          | *removed*     | Supprime toutes les tâches programmées, immédiatement et sans demande de confirmation.    |
 
 #### Syntaxe de l'éditeur
 
@@ -2113,20 +2113,20 @@ mm hh jj MMM JJJ commande > log
 
 Concernant la syntaxe :
 
-- `mm`			: représente les minutes (de 0 à 59)
-- `hh`			: représente l'heure (de 0 à 23)
-- `jj`			: représente le numéro du jour du mois (de 1 à 31)
-- `MMM`			: représente le numéro du mois (de 1 à 12) ou l'abréviation du nom (jan, feb, mar, apr, ...)
-- `JJJ`			: représente l'abréviation du nom du jour ou le chiffre correspondant au jour de la semaine (0 pour dimanche, 1 pour lundi, ...)
-- `commande`	: représente la commande ou le script *shell* à exécuter (chemin absolu ou relatif)
-- `log`			: représente le nom d'un fichier dans lequel stocker le journal des opérations. Si la clause de redirection n'est pas spécifiée, `cron` envoie automatiquement un mail de confirmation. Pour éviter ces deux comportements, il suffit de spécifier `> /dev/null`.
+- `mm`          : représente les minutes (de 0 à 59)
+- `hh`          : représente l'heure (de 0 à 23)
+- `jj`          : représente le numéro du jour du mois (de 1 à 31)
+- `MMM`         : représente le numéro du mois (de 1 à 12) ou l'abréviation du nom (jan, feb, mar, apr, ...)
+- `JJJ`         : représente l'abréviation du nom du jour ou le chiffre correspondant au jour de la semaine (0 pour dimanche, 1 pour lundi, ...)
+- `commande`    : représente la commande ou le script *shell* à exécuter (chemin absolu ou relatif)
+- `log`         : représente le nom d'un fichier dans lequel stocker le journal des opérations. Si la clause de redirection n'est pas spécifiée, `cron` envoie automatiquement un mail de confirmation. Pour éviter ces deux comportements, il suffit de spécifier `> /dev/null`.
 
 Pour chaque unité de temps (minute/heure/...) les notations suivantes sont possibles :
 
-- \*	: à chaque unité de temps
-- 2-5	: les unités de temps de 2 à 5
-- */3	: toutes les 3 unités de temps (0,3,6,...)
-- 5,8	: les unités de temps 5 et 8
+- \*    : à chaque unité de temps
+- 2-5   : les unités de temps de 2 à 5
+- */3   : toutes les 3 unités de temps (0,3,6,...)
+- 5,8   : les unités de temps 5 et 8
 
 #### Quelques exemples
 
@@ -2225,14 +2225,14 @@ passwd -x 92 nom-utilisateur
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 																											|
-| :------------	| :------------	| :----------------------------------------------------------------------------------------------------------------	|
-| *-e*			| *expire*		| Le mot de passe est immédiatement désactivé. L'utilisateur, à sa prochaine connexion, devra le changer.			|
-| *-h*			| *help*		| Affiche l'aide.																									|
-| *-i* n		| *inactive*	| Désactive le compte après *n* jours d'inactivité si l'utilisateur ne se connecte pas pendant cette période.		|
-| *-n* n		| *mindays*		| Nombre de jours minimum où le mot de passe restera valide (en *n* jours, 0 pour un changement illimité).			|
-| *-x* n		| *maxdays*		| Nombre de jours maximum où le mot de passe restera valide (en *n* jours).											|
-| *-S* user		| *Status*		| Affiche l'état du mot de passe pour le compte demandé, voir le *manuel* à ce sujet pour plus d'informations.		|
+| Option        | Signification | Détail                                                                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------------------------------------------------------- |
+| *-e*          | *expire*      | Le mot de passe est immédiatement désactivé. L'utilisateur, à sa prochaine connexion, devra le changer.           |
+| *-h*          | *help*        | Affiche l'aide.                                                                                                   |
+| *-i* n        | *inactive*    | Désactive le compte après *n* jours d'inactivité si l'utilisateur ne se connecte pas pendant cette période.       |
+| *-n* n        | *mindays*     | Nombre de jours minimum où le mot de passe restera valide (en *n* jours, 0 pour un changement illimité).          |
+| *-x* n        | *maxdays*     | Nombre de jours maximum où le mot de passe restera valide (en *n* jours).                                         |
+| *-S* user     | *Status*      | Affiche l'état du mot de passe pour le compte demandé, voir le *manuel* à ce sujet pour plus d'informations.      |
 
 ### rpm
 
@@ -2255,10 +2255,10 @@ su utilisateur
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 																											|
-| :------------	| :------------	| :----------------------------------------------------------------------------------------------------------------	|
-| *-l*			| *login*		| Fourni à l'utilisateur un environnement similaire à celui qu'il aurait obtenu s'il s'était connecté directement.	|
-| *-s*			| *shell*		| Indique l'interpréteur de commande qui doit être appelé lors de la connexion.										|
+| Option        | Signification | Détail                                                                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------------------------------------------------------- |
+| *-l*          | *login*       | Fourni à l'utilisateur un environnement similaire à celui qu'il aurait obtenu s'il s'était connecté directement.  |
+| *-s*          | *shell*       | Indique l'interpréteur de commande qui doit être appelé lors de la connexion.                                     |
 
 ### sudo
 ((Super user do))
@@ -2307,14 +2307,14 @@ usermod utilisateur
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail 																																|
-| :------------	| :------------	| :------------------------------------------------------------------------------------------------------------------------------------	|
-| *-a*			| *append*		| Ajoute l'utilisateur au groupe indiqué en addition aux groupes secondaires, uniquement utilisable avec l'option *G*.					|
-| *-l*			| *login*		| Renomme l'utilisateur, son dossier *home* sera inchangé.																				|
-| *-d*			| *home*		| Indique le nouveau dossier personnel de l'utilisateur.																				|
-| *-m*			| *move-home*	| Lié à l'option *d*. Déplace les données du dossier personnel actuel vers le nouveau. Ce dernier sera créé s'il n'existe pas.			|
-| *-g*			| *group*		| Change le groupe initial de l'utilisateur.																							|
-| *-G*			| *Groups*		| Ajoute l'utilisateur à un nouveau groupe, il est nécessaire de rappeler l'ensemble des groupes secondaires auxquels il appartient.	|
+| Option        | Signification | Détail                                                                                                                                |
+| :------------ | :------------ | :------------------------------------------------------------------------------------------------------------------------------------ |
+| *-a*          | *append*      | Ajoute l'utilisateur au groupe indiqué en addition aux groupes secondaires, uniquement utilisable avec l'option *G*.                  |
+| *-l*          | *login*       | Renomme l'utilisateur, son dossier *home* sera inchangé.                                                                              |
+| *-d*          | *home*        | Indique le nouveau dossier personnel de l'utilisateur.                                                                                |
+| *-m*          | *move-home*   | Lié à l'option *d*. Déplace les données du dossier personnel actuel vers le nouveau. Ce dernier sera créé s'il n'existe pas.          |
+| *-g*          | *group*       | Change le groupe initial de l'utilisateur.                                                                                            |
+| *-G*          | *Groups*      | Ajoute l'utilisateur à un nouveau groupe, il est nécessaire de rappeler l'ensemble des groupes secondaires auxquels il appartient.    |
 
 N'hésitez pas à lire le *manuel* de cette commande, les options sont un peu trop compliquées pour qu'elles puissent être détaillées ici.
 
@@ -2366,10 +2366,10 @@ fichier
 
 Voici les options disponibles :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *--help*		| *help*		| Affiche l'aide de la commande.									|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *--help*      | *help*        | Affiche l'aide de la commande.                                    |
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.         |
 
 ### break
 {{Primitive du shell}}
@@ -2398,10 +2398,10 @@ Retournera :
 
 Voici les options disponibles :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *--help*		| *help*		| Affiche l'aide de la commande.									|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *--help*      | *help*        | Affiche l'aide de la commande.                                    |
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.         |
 
 ### echo
 {{Primitive du shell}}
@@ -2454,10 +2454,10 @@ sleep 6
 
 Par défaut, le paramètre passé en argument est exprimé en seconde. Pour utiliser une autre unité de temps, utilisez un des suffixes suivants :
 
-- *s*	: valeur par défaut, temps exprimé en secondes (pour *seconds*).
-- *m*	: temps exprimé en minutes (pour *minutes*).
-- *h*	: temps exprimé en heures (pour *hours*).
-- *d*	: temps exprimé en jours (pour *days*).
+- *s*   : valeur par défaut, temps exprimé en secondes (pour *seconds*).
+- *m*   : temps exprimé en minutes (pour *minutes*).
+- *h*   : temps exprimé en heures (pour *hours*).
+- *d*   : temps exprimé en jours (pour *days*).
 
 Un exemple :
 
@@ -2467,10 +2467,10 @@ sleep 1h
 
 Voici les options disponibles :
 
-| Option 		| Signification	| Détail 															|
-| :------------	| :------------	| :----------------------------------------------------------------	|
-| *--help*		| *help*		| Affiche l'aide de la commande.									|
-| *--version*	| *version*		| Indique la version actuellement installée sur le système.			|
+| Option        | Signification | Détail                                                            |
+| :------------ | :------------ | :---------------------------------------------------------------- |
+| *--help*      | *help*        | Affiche l'aide de la commande.                                    |
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.         |
 
 ### source
 {{Primitive du shell}}

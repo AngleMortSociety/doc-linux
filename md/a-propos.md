@@ -39,8 +39,8 @@ Voici les quelques liens qui ont été sources d'inspiration et d'informations d
 
 ### Les contributeurs de la documentation
 
-- kCell									: écriture, documentation, tests
-- Jean-Baptiste Lacour, alias Moonjb	: écriture, relecture, correction
+- kCell                                 : écriture, documentation, tests
+- Jean-Baptiste Lacour, alias Moonjb    : écriture, relecture, correction
 
 [lien]: https://fr.wikipedia.org/wiki/Distribution_Linux#mediaviewer/Fichier:Linux_Distribution_Timeline.svg "Linux Distribution Timeline"
 [**Creative Commons**]: http://creativecommons.org/licenses/by-sa/4.0/ "CC BY-SA"

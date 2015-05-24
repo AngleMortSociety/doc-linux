@@ -272,13 +272,13 @@ scp -P 910 login@adresse-ip:dossier/fichier dossier-de-destination/fichier
 
 Voici les principales options :
 
-| Option 		| Signification	| Détail																					|
-| :------------	| :------------	| :----------------------------------------------------------------------------------------	|
-| *-P*			| *Port*		| Permet de spécifier le port de connexion `ssh`.											|
-| *-p*			| *preserves*	| Préserve les dates de modifications et d'accès ainsi que les droits du fichier original.	|
-| *-q*			| *quiet*		| Masque la barre de progression ainsi que tous les autres messages.						|
-| *-r*			| *recursive*	| Copie les dossiers et leurs contenus de manière récursive.								|
-| *-v*			| *verbose*		| Affiche les messages en mode *debug* pour localiser les problèmes de connexion.			|
+| Option        | Signification | Détail                                                                                    |
+| :------------ | :------------ | :---------------------------------------------------------------------------------------- |
+| *-P*          | *Port*        | Permet de spécifier le port de connexion `ssh`.                                           |
+| *-p*          | *preserves*   | Préserve les dates de modifications et d'accès ainsi que les droits du fichier original.  |
+| *-q*          | *quiet*       | Masque la barre de progression ainsi que tous les autres messages.                        |
+| *-r*          | *recursive*   | Copie les dossiers et leurs contenus de manière récursive.                                |
+| *-v*          | *verbose*     | Affiche les messages en mode *debug* pour localiser les problèmes de connexion.           |
 
 [Wikipedia]: http://fr.wikipedia.org/wiki/Secure_Shell "Wikipedia : ssh"
 [ici]: http://fr.wikipedia.org/wiki/Cryptographie_asym%C3%A9trique "Wikipedia : cryptographie asymétrique"
