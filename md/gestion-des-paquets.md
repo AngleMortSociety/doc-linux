@@ -87,17 +87,23 @@ sudo apt-get clean
 
 Reportez-vous au manuel de la commande `apt-get` pour plus d'informations car les options sont trop nombreuses pour en faire une liste exhaustive ici. Voici les plus utiles :
 
-| Option		| Signification		| Détail																							|
+| Option        | Signification     | Détail                                                                                            |
 | :------------ | :---------------- | :------------------------------------------------------------------------------------------------ |
-| *-d*			| *download-only*	| Télécharge les paquets mais ils ne sont ni dépaquetés, ni installés.								|
-| *-s*			| *simulate*		| Pas d'action, simule les évènements qui devraient se produire mais sans effectuer de changement.	|
-| *-y*			| *yes*				| Répond automatiquement par oui aux questions posées pendant le processus.							|
-| *-b*			| *build*			| Cette commande compile un paquet source après l'avoir récupéré.									|
-| *-v*			| *version*			| Affiche la version du programme.																	|
+| *-d*          | *download-only*   | Télécharge les paquets mais ils ne sont ni dépaquetés, ni installés.                              |
+| *-s*          | *simulate*        | Pas d'action, simule les évènements qui devraient se produire mais sans effectuer de changement.  |
+| *-y*          | *yes*             | Répond automatiquement par oui aux questions posées pendant le processus.                         |
+| *-b*          | *build*           | Cette commande compile un paquet source après l'avoir récupéré.                                   |
+| *-v*          | *version*         | Affiche la version du programme.                                                                  |
 
 ## Aptitude
 
 Cette commande est un gestionnaire de paquets basé sur l'infrastructure APT, c'est-à-dire que vous pouvez installer, supprimer et mettre à jour des commandes (paquets). Elle présente des fonctionnalités équivalentes à `dselect` ou `apt-get`. Il y a deux façons d'utiliser `aptitude` : la première, en ligne de commande, est semblable à `apt-get` où l'on retrouve les mêmes options ; l'autre passe par l'interface interactive. La commande `aptitude` est plus récente que `apt-get` mais cette dernière est encore largement utilisée. Il est préférable de faire un choix entre ces deux gestionnaires et de n'utiliser que celui qui est retenu. Ceci évitera, par exemple, de mélanger les configurations de chacune de ces commandes.
+
+Attention, sur certaines distributions, `aptitude` n'est pas installé. Il faut donc passer par la commande :
+
+``` bash
+sudo apt-get install aptitude
+```
 
 ### Ligne de commande
 
@@ -132,6 +138,12 @@ sudo aptitude show -v "nom-du-paquet"
 ```
 
 L'option *v* (pour *verbose*) donnera plus de détails.
+
+Il est également possible d'afficher les versions disponibles d'un paquet :
+
+``` bash
+aptitude versions "nom-du-paquet"
+```
 
 #### Installation de paquets
 
