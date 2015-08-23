@@ -211,6 +211,29 @@ Voici les principales options :
 
 Utilisez la combinaison de touches <kbd>CTRL</kbd> + <kbd>C</kbd> pour quitter la commande lancée avec l'option *s*.
 
+### fuser
+
+Cette commande permet d'identifier quels processus utilisent des fichiers ou des sockets, par exemple :
+
+``` bash
+fuser fichier
+```
+
+Affiche comme retour dans le Terminal un numéro PID, exemple : `19055`. La commande `ps` permet d'identifier le nom du processus grâce à ce PID :
+
+``` bash
+ps -p 19055
+```
+
+Cette manipulation peut être utile quand vous souhaitez intervenir sur des fichiers qui sont bloqués parce qu'ils sont utilisés par d'autres programmes.
+
+Voici les principales options :
+
+| Option        | Signification | Détail                                                                        |
+| :------------ | :------------ | :---------------------------------------------------------------------------- |
+| *-k*          | *kill*        | Indique la version actuellement installée sur le système. 					|
+| *-V*          | *Version*     | Permet d’arrêter le(s) processus qui accèdent au fichier. 					|
+
 ### groups
 
 Affiche la liste des groupes dont vous faites partie (sans paramètre) ou dont fait partie l'utilisateur demandé (nom de l'utilisateur en paramètre).
@@ -446,12 +469,15 @@ Le résultat ressemble à ceci :
 
 Voici les principales options :
 
-| Option        | Signification | Détail                                                            |
-| :------------ | :------------ | :---------------------------------------------------------------- |
-| *-a*          | *all*         | Affiche tous les fichiers, y compris les fichiers cachés.         |
-| *-d*          | *directories* | Affiche uniquement les dossiers.                                  |
-| *-L* n        | *Level*       | Profondeur maximum des sous-dossiers indiquée par la valeur *n*.  |
-| *--version*   | *version*     | Indique la version actuellement installée sur le système.         |
+| Option        | Signification | Détail                                                                			|
+| :------------ | :------------ | :-------------------------------------------------------------------------------- |
+| *-a*          | *all*         | Affiche tous les fichiers, y compris les fichiers cachés.             			|
+| *-d*          | *directories* | Affiche uniquement les dossiers.                                      			|
+| *-L* n        | *Level*       | Impose la profondeur maximum pour les sous-dossiers, indiquée par la valeur *n*. 	|
+| *-f*          | *full*        | Affiche le chemin complet en préfixant chaque fichier par le parent.  			|
+| *-o* file     | *output*      | Inscrit le résultat dans un fichier de sortie.                        			|
+| *--help*      | *help*        | Affiche l'aide de la commande.                                        			|
+| *--version*   | *version*     | Indique la version actuellement installée sur le système.             			|
 
 ### tty
 
