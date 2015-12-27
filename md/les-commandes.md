@@ -296,7 +296,7 @@ Voici les principales options :
 | Option        | Signification | Détail                                                                                |
 | :------------ | :------------ | :------------------------------------------------------------------------------------ |
 | *-a*          | *all*         | Affiche tous les fichiers, y compris les fichiers cachés.                             |
-| *-A*          | *Almost all*  | Idem que *a* mais sans les dossiers « . » et « .. »                                   |
+| *-A*          | *Almost all*  | Idem que l'option *a* mais sans les dossiers « . » et « .. »                          |
 | *-F*          | *classiFy*    | Ajoute un indicateur aux dossiers, exécutables, liens, etc. (* / = > @ &#124;).       |
 | *-p*          |               | Ajoute un indicateur aux dossiers : « / ».                                            |
 | *-l*          | *list*        | Liste détaillée (affiche les droits, la date, l'utilisateur, le groupe, etc.).        |

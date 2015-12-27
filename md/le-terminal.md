@@ -288,9 +288,14 @@ Dans un Terminal, il est possible d'utiliser les raccourcis suivants :
 | Les flèches <kbd>↑</kbd> et <kbd>↓</kbd>                      | Navigation de l'historique pour les commandes précédemment utilisées.                                                         |
 | <kbd>SHIFT</kbd> + ( <kbd>↑</kbd> ou <kbd>↓</kbd> )           | Permet de scroller le contenu du Terminal (la molette de la souris est tout aussi efficace).                                  |
 | <kbd>SHIFT</kbd> + ( <kbd>Page up</kbd> ou <kbd>down</kbd> )  | Même chose mais de page en page.                                                                                              |
+| <kbd>CTRL</kbd> + <kbd>A</kbd>                                | Positionne le curseur au début de la ligne.                                                                                   |
 | <kbd>CTRL</kbd> + <kbd>C</kbd>                                | Arrête un processus en cours de fonctionnement.                                                                               |
 | <kbd>CTRL</kbd> + <kbd>D</kbd>                                | Ferme le terminal en cours d'utilisation ou quitte un utilisateur substitué (similaire aux commandes `exit` et `logout`).     |
+| <kbd>CTRL</kbd> + <kbd>E</kbd>                                | Positionne le curseur en fin de ligne.                                                                                        |
+| <kbd>CTRL</kbd> + <kbd>K</kbd>                                | Efface le contenu d'une ligne depuis la position du curseur jusqu'à la fin de la ligne.                                       |
 | <kbd>CTRL</kbd> + <kbd>L</kbd>                                | Permet de nettoyer le Terminal, le curseur remonte en haut (similaire à la commandes `clear`).                                |
+| <kbd>CTRL</kbd> + <kbd>R</kbd>                                | Permet d'effectuer une recherche sur les commandes précédemment lancées dans le Terminal.                                     |
+| <kbd>CTRL</kbd> + <kbd>U</kbd>                                | Efface le contenu d'une ligne depuis le début de celle-ci jusqu'à la position du curseur.                                     |
 | <kbd>CTRL</kbd> + <kbd>Z</kbd>                                | Stoppe le processus en cours, mais ne le détruit pas : il reste en attente. Tapez `fg` pour le faire revenir au premier plan. |
 | <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>DEL</kbd>             | Diffère en fonction des distributions GNU/Linux.                                                                              |
 
