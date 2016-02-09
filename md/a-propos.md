@@ -21,6 +21,7 @@ Voici quelques liens sur les distributions les plus connues :
 - [CentOS](http://www.centos.org "CentOS - Site officiel")
 - [Debian](http://www.debian.org "Debian - Site officiel")
 - [Fedora](http://fedoraproject.org "Fedora - Site officiel")
+- [Gentoo](https://www.gentoo.org "Gentoo - Site officiel")
 - [Linux Mint](http://www.linuxmint.com "Linux Mint - Site officiel")
 - [Mageia](http://www.mageia.org/fr/ "Mageia - Site officiel")
 - [OpenSuse](http://www.opensuse.org/fr/ "OpenSuse - Site officiel")
