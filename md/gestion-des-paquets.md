@@ -83,6 +83,14 @@ Afin de nettoyer entièrement le cache :
 sudo apt-get clean
 ```
 
+### Sources
+
+Le fichier de configuration indiquant à la commande où se trouvent les sources des paquets se situe à l'emplacement suivant :
+
+``` bash
+sudo nano /etc/apt/sources.list
+```
+
 ### Les options
 
 Reportez-vous au manuel de la commande `apt-get` pour plus d'informations car les options sont trop nombreuses pour en faire une liste exhaustive ici. Voici les plus utiles :

@@ -336,7 +336,7 @@ Note : le `x` est spécifique dans le cas d'un dossier car il donne le droit d'a
 
 Pour résumer, le premier caractère symbolise le type (fichier, dossier ou lien symbolique, etc.). Vient ensuite le premier groupe de 3 qui représente les droits du propriétaire sur ce fichier, puis les droits du groupe et enfin, les droits des autres utilisateurs. L'ordre reste immuable : `r`, `w` et, pour finir la gamme, `x`. En cas de non-droit, le symbole `-` est alors utilisé.
 
-Puis vient le nombre 1 qui représente le fichier, c'est-à-dire qu'il y a un fichier unique. Si des liens physiques sont créés, alors ce nombre augmentera autant de fois qu'il y aura de liens pointant vers celui-ci. Les liens symboliques ne sont pas comptabilisés.
+Puis vient le nombre 1 qui représente le fichier, c'est-à-dire qu'il y a un fichier unique. Si des liens physiques sont créés, alors ce nombre augmentera autant de fois qu'il y aura de liens pointant vers le fichier. Les liens symboliques ne sont pas comptabilisés. Dans le cas d'un dossier, il indique le nombre de fichiers présent à l'intérieur de celui-ci. Le chiffre minimum étant 2 pour le dossier courant `.` et le dossier parent `..`.
 
 Ensuite, c’est le nom de l'utilisateur. Dans l'exemple, il s'agit de *martin*. Le nom suivant, ici *staff*, est le nom du groupe. On sait donc que *martin* a des droits de lecture et d'écriture en tant que propriétaire de son fichier alors que le groupe *staff* n'a des accès qu'en lecture tout comme les autres (le reste des utilisateurs qui ne font pas partie de ce groupe).
 

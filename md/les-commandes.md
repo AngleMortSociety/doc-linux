@@ -861,13 +861,15 @@ Tout d'abord, les liens physiques. Ils permettent de créer une entrée vers un 
 ln fichier lien-fichier
 ```
 
-Les liens symboliques sont l'équivalent des raccourcis que l'on trouve dans Windows. Le lien ne pointe plus sur l'inode du fichier mais vers son nom. Ainsi, si vous supprimez ou renommez le fichier pointé, le lien se cassera et rien ne se produira quand vous voudrez y accéder. Ce type de lien est très utilisé pour accéder à des dossiers, ce qui est aussi possible avec les liens physiques mais un peu plus compliqué. Pour un lien *symbolique*, utilisez l'option *s* (pour *symbolic*) :
+Les liens symboliques sont l'équivalent des raccourcis que l'on trouve dans Windows. Le lien ne pointe plus sur l'inode du fichier mais vers son nom. Ainsi, si vous supprimez ou renommez le fichier pointé, le lien se cassera et rien ne se produira quand vous voudrez y accéder. Ce type de lien est très utilisé pour accéder à des dossiers, ce qui est aussi possible avec les liens physiques mais un peu plus compliqué à réaliser. Pour un lien *symbolique*, utilisez l'option *s* (pour *symbolic*) :
 
 ``` bash
-ln -s fichier lien-fichier
+ln -s chemin-absolu/fichier chemin/lien-fichier
 ```
 
-Pour connaître le nombre de liens qui pointent vers un fichier, il suffit d'utiliser la commande `ls -l` pour avoir le détail.
+Il est préférable d'indiquer, lors de la création d'un lien symbolique, le chemin absolu vers le fichier lié car choisir un chemin relatif par rapport au lien créé empêchera de déplacer ce dernier par la suite. En effet, un déplacement impliquerait la perte, du point de vue du lien, du fichier lié là où un chemin absolu sera toujours accessible car commençant toujours par la racine du disque. Dans tous les cas, un déplacement du fichier d'origine aura pour conséquence de devoir recréer le lien. Un lien symbolique cassé ne fonctionnera pas et, en fonction de la configuration du Terminal, pourra apparaître en rouge. Un lien fonctionnel sera affiché dans une autre couleur, plus douce.
+
+Afin de connaître sur quel fichier pointe un lien, il est nécessaire d'utiliser la commande `ls -l` qui affiche plus de détails. Elle indique notamment la localisation d'un fichier ainsi pointé.
 
 ### mkdir
 ((Make directories))
