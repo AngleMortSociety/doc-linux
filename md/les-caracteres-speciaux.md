@@ -42,7 +42,7 @@ Il est parfois nécessaire d'utiliser des codes (ISO ou HTML) afin d'accéder à
 | #             | `&#35;`   | &#35;     |           |            | <kbd>ALT</kbd> + 035     | Dièse.                                                            |
 | $             | `&#36;`   | &#36;     |           |            | <kbd>ALT</kbd> + 036     | Symbole monétaire du dollar.                                      |
 | %             | `&#37;`   | &#37;     |           |            | <kbd>ALT</kbd> + 037     | Pour cent.                                                        |
-| &             | `&#38;`   | &#38;     | `&amp;`   | &amp;      | <kbd>ALT</kbd> + 038     | Ésperluette ou "ET" commercial.                                   |
+| &             | `&#38;`   | &#38;     | `&amp;`   | &amp;      | <kbd>ALT</kbd> + 038     | Ésperluette ou « ET » commercial.                                 |
 | '             | `&#39;`   | &#39;     |           |            | <kbd>ALT</kbd> + 039     | Quote, guillemet simple ou apostrophe.                            |
 | (             | `&#40;`   | &#40;     |           |            | <kbd>ALT</kbd> + 040     | Parenthèse ouvrante.                                              |
 | )             | `&#41;`   | &#41;     |           |            | <kbd>ALT</kbd> + 041     | Parenthèse fermante.                                              |
@@ -68,7 +68,7 @@ Il est parfois nécessaire d'utiliser des codes (ISO ou HTML) afin d'accéder à
 | =             | `&#61;`   | &#61;     |           |            | <kbd>ALT</kbd> + 061     | Opérateur mathématique égal.                                      |
 | >             | `&#62;`   | &#62;     | `&gt;`    | &gt;       | <kbd>ALT</kbd> + 062     | Chevron fermant ou opérateur mathématique supérieur à.            |
 | ?             | `&#63;`   | &#63;     |           |            | <kbd>ALT</kbd> + 063     | Point d'interrogation.                                            |
-| @             | `&#64;`   | &#64;     |           |            | <kbd>ALT</kbd> + 064     | Arobas ou "A" commercial.                                         |
+| @             | `&#64;`   | &#64;     |           |            | <kbd>ALT</kbd> + 064     | Arobas ou « A » commercial.                                       |
 | A             | `&#65;`   | &#65;     |           |            | <kbd>ALT</kbd> + 065     | Lettre majuscule A.                                               |
 | B             | `&#66;`   | &#66;     |           |            | <kbd>ALT</kbd> + 066     | Lettre majuscule B.                                               |
 | C             | `&#67;`   | &#67;     |           |            | <kbd>ALT</kbd> + 067     | Lettre majuscule C.                                               |
@@ -135,7 +135,7 @@ Il est parfois nécessaire d'utiliser des codes (ISO ou HTML) afin d'accéder à
 | €             | `&#128;`  | &#128;    | `&euro;`  | &euro;     | <kbd>ALT</kbd> + 0128    | Symbole monétaire de l'euro.                                      |
 |               | `&#129;`  | &#129;    |           |            | <kbd>ALT</kbd> + 0129    | Caractère indéfini.                                               |
 | ‚             | `&#130;`  | &#130;    |           |            | <kbd>ALT</kbd> + 0130    | Virgule.                                                          |
-| ƒ             | `&#131;`  | &#131;    |           |            | <kbd>ALT</kbd> + 0131    | "F" hameçon ou symbole monétaire du florin.                       |
+| ƒ             | `&#131;`  | &#131;    |           |            | <kbd>ALT</kbd> + 0131    | « F » hameçon ou symbole monétaire du florin.                     |
 | „             | `&#132;`  | &#132;    |           |            | <kbd>ALT</kbd> + 0132    |                                                                   |
 | …             | `&#133;`  | &#133;    |           |            | <kbd>ALT</kbd> + 0133    | Points de suspension.                                             |
 | †             | `&#134;`  | &#134;    |           |            | <kbd>ALT</kbd> + 0134    | Obèle ou symbole typographique en forme de croix.                 |
@@ -147,8 +147,8 @@ Il est parfois nécessaire d'utiliser des codes (ISO ou HTML) afin d'accéder à
 | Œ             | `&#140;`  | &#140;    |           |            | <kbd>ALT</kbd> + 0140    | « e dans l'o », « o e liés », etc. (majuscule)                    |
 |               | `&#141;`  | &#141;    |           |            | <kbd>ALT</kbd> + 0141    | Caractère indéfini.                                               |
 | Ž             | `&#142;`  | &#142;    |           |            | <kbd>ALT</kbd> + 0142    |                                                                   |
-|              | `&#143;`  | &#143;    |           |            | <kbd>ALT</kbd> + 0143    | Caractère indéfini.                                               |
-|              | `&#144;`  | &#144;    |           |            | <kbd>ALT</kbd> + 0144    | Caractère indéfini.                                               |
+|               | `&#143;`  | &#143;    |           |            | <kbd>ALT</kbd> + 0143    | Caractère indéfini.                                               |
+|               | `&#144;`  | &#144;    |           |            | <kbd>ALT</kbd> + 0144    | Caractère indéfini.                                               |
 | ‘             | `&#145;`  | &#145;    |           |            | <kbd>ALT</kbd> + 0145    | Apostrophe inverse.                                               |
 | ’             | `&#146;`  | &#146;    |           |            | <kbd>ALT</kbd> + 0146    | Apostrophe.                                                       |
 | “             | `&#147;`  | &#147;    |           |            | <kbd>ALT</kbd> + 0147    | Guillemets anglais doubles ouvrants (ou gauches).                 |
@@ -161,7 +161,7 @@ Il est parfois nécessaire d'utiliser des codes (ISO ou HTML) afin d'accéder à
 | š             | `&#154;`  | &#154;    |           |            | <kbd>ALT</kbd> + 0154    |                                                                   |
 | ›             | `&#155;`  | &#155;    | `&gt;`    | &gt;       | <kbd>ALT</kbd> + 0155    | Chevron ou opérateur mathématique supérieur à.                    |
 | œ             | `&#156;`  | &#156;    | `&oelig;` | &oelig;    | <kbd>ALT</kbd> + 0156    | « e dans l'o », « o e liés », etc. (minuscule)                    |
-|                 | `&#157;`  | &#157;    |           |            | <kbd>ALT</kbd> + 0157    | Caractère indéfini.                                               |
+|               | `&#157;`  | &#157;    |           |            | <kbd>ALT</kbd> + 0157    | Caractère indéfini.                                               |
 | ž             | `&#158;`  | &#158;    |           |            | <kbd>ALT</kbd> + 0158    |                                                                   |
 | Ÿ             | `&#159;`  | &#159;    | `&Yuml;`  | &Yuml;     | <kbd>ALT</kbd> + 0159    |                                                                   |
 |               | `&#160;`  | &#160;    | `&nbsp;`  | &nbsp;     | <kbd>ALT</kbd> + 0160    | Espace insécable.                                                 |
@@ -177,7 +177,7 @@ Il est parfois nécessaire d'utiliser des codes (ISO ou HTML) afin d'accéder à
 | ª             | `&#170;`  | &#170;    | `&ordf;`  | &ordf;     | <kbd>ALT</kbd> + 0170    | Ordinal féminin.                                                  |
 | «             | `&#171;`  | &#171;    | `&laquo;` | &laquo;    | <kbd>ALT</kbd> + 0171    | Guillemets français doubles ouvrants ou chevrons imbriqués.       |
 | ¬             | `&#172;`  | &#172;    | `&not;`   | &not;      | <kbd>ALT</kbd> + 0172    | Signe non.                                                        |
-| ­             | `&#173;`  | &#173;    | `&shy;`   | &shy;      | <kbd>ALT</kbd> + 0173    | Tiret de césure optionnelle.                                      |
+| ­              | `&#173;`  | &#173;    | `&shy;`   | &shy;      | <kbd>ALT</kbd> + 0173    | Tiret de césure optionnelle.                                      |
 | ®             | `&#174;`  | &#174;    | `&reg;`   | &reg;      | <kbd>ALT</kbd> + 0174    | Marque déposée.                                                   |
 | ¯             | `&#175;`  | &#175;    | `&macr;`  | &macr;     | <kbd>ALT</kbd> + 0175    | Macron.                                                           |
 | °             | `&#176;`  | &#176;    | `&deg;`   | &deg;      | <kbd>ALT</kbd> + 0176    | Symbole degré.                                                    |
