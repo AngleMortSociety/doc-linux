@@ -68,7 +68,7 @@ Il est parfois nécessaire d'utiliser des codes (ISO ou HTML) afin d'accéder à
 | =             | `&#61;`   | &#61;     |           |            | <kbd>ALT</kbd> + 061     | Opérateur mathématique égal.                                      |
 | >             | `&#62;`   | &#62;     | `&gt;`    | &gt;       | <kbd>ALT</kbd> + 062     | Chevron fermant ou opérateur mathématique supérieur à.            |
 | ?             | `&#63;`   | &#63;     |           |            | <kbd>ALT</kbd> + 063     | Point d'interrogation.                                            |
-| @             | `&#64;`   | &#64;     |           |            | <kbd>ALT</kbd> + 064     | Arobas ou « A » commercial.                                       |
+| @             | `&#64;`   | &#64;     |           |            | <kbd>ALT</kbd> + 064     | Arobase ou « A » commercial.                                      |
 | A             | `&#65;`   | &#65;     |           |            | <kbd>ALT</kbd> + 065     | Lettre majuscule A.                                               |
 | B             | `&#66;`   | &#66;     |           |            | <kbd>ALT</kbd> + 066     | Lettre majuscule B.                                               |
 | C             | `&#67;`   | &#67;     |           |            | <kbd>ALT</kbd> + 067     | Lettre majuscule C.                                               |
