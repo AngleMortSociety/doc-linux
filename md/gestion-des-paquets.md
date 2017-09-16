@@ -203,7 +203,7 @@ Pour réaliser une mise à jour complète de votre système ainsi que de tous le
 sudo aptitude full-upgrade
 ```
 
-Attention, l’option *full-upgrade* peut supprimer des paquets pour en installer de nouveaux et est donc moins conservatrice que *safe-update*.
+Attention, l’option *full-upgrade* peut supprimer des paquets pour en installer de nouveaux et est donc moins conservatrice que *safe-upgrade*.
 
 #### Nettoyage
 

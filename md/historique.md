@@ -3,7 +3,7 @@
 
 En 1991, les « compatibles PC » fonctionnant généralement avec les systèmes d'exploitation MS-DOS, Windows ou OS/2, dominent le marché des ordinateurs personnels. En effet, les PC basés sur le microprocesseur Intel 80386 et commercialisés depuis 1986, commencent à afficher des prix de plus en plus abordables. Cependant, les systèmes grand public restent attachés à la compatibilité avec les anciens processeurs 16 bits d'Intel et exploitent mal les capacités 32 bits et l'unité de gestion mémoire du 80386.
 
-Cette même année, l'étudiant finlandais Linus Torvalds, indisposé par la faible disponibilité du serveur informatique UNIX de l'université d'Helsinki, entreprend le développement d'un noyau de système d'exploitation qui s'appellera « noyau Linux » à partir de 1996. En faisant cela, Linus désire surtout comprendre le fonctionnement de son ordinateur fondé sur un Intel 80386.
+Cette même année, l'étudiant finlandais [Linus Torvalds][], indisposé par la faible disponibilité du serveur informatique UNIX de l'université d'Helsinki, entreprend le développement d'un noyau de système d'exploitation qui s'appellera « noyau Linux » à partir de 1996. En faisant cela, Linus désire surtout comprendre le fonctionnement de son ordinateur fondé sur un Intel 80386.
 
 Linus Torvalds a fait son apprentissage avec le système d'exploitation [Minix][]. Cependant, comme le concepteur de Minix — [Andrew Tanenbaum][] — refuse d'intégrer les contributions visant à l'améliorer, Linus décide de programmer un remplaçant du système d'exploitation. Il commence par développer un simple émulateur de Terminal, qu'il utilise pour se connecter via un modem au serveur informatique de son université. Après l'ajout de diverses fonctionnalités dont un système de fichiers compatible avec celui de Minix, il oriente son projet vers quelque chose de plus ambitieux : un noyau aux normes [POSIX][]. À ce noyau, il adapte de nombreux composants disponibles du système d'exploitation [GNU][] et en créé ainsi un plus complet.
 
@@ -25,6 +25,7 @@ D'autres variantes du *TUX* ont été créées par plusieurs artistes dans le mo
 - [Minix](http://www.minix3.org/ "Minix - Site officiel")
 - [The Cathedral & the Bazaar](http://www.amazon.fr/The-Cathedral-Bazaar-en-anglais/dp/1565927249/ref=sr_1_5?ie=UTF8&qid=1374937433&sr=8-5&keywords=la+cath%C3%A9drale+et+le+bazar "Amazon, en anglais")
 
+[Linus Torvalds]: https://fr.wikipedia.org/wiki/Linus_Torvalds "Wikipedia : Linus Torvalds"
 [Minix]: http://fr.wikipedia.org/wiki/Minix "Wikipedia : Minix"
 [Andrew Tanenbaum]: http://fr.wikipedia.org/wiki/Andrew_Tanenbaum "Wikipedia : Andrew Tanenbaum"
 [POSIX]: http://fr.wikipedia.org/wiki/POSIX "Wikipedia : POSIX"

@@ -9,7 +9,7 @@ Un mot de passe doit contenir au minimum entre 8 et 12 caractères. Les règles 
 
 - De lettres minuscules et majuscules (de « A » à « Z » et de « a » à « z »)
 - De chiffres (de « 0 » à « 9 »)
-- De caractères spéciaux (« . », « / », « _ » etc.)
+- De caractères spéciaux (« . », « / », « _ », etc.)
 
 Quelques conseils supplémentaires :
 

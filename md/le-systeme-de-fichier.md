@@ -57,7 +57,7 @@ Abréviation de *processus*, le noyau place dans ce répertoire virtuel (il n'ex
 
 ### /root
 
-Dossier personnel du **super user** (super-utilisateur).
+Dossier personnel du « **super user** » (*super-utilisateur*, en français).
 
 ### /run
 
@@ -77,7 +77,7 @@ Abréviation de *services*, contient les données hébergées par le système, c
 
 ### /sys
 
-Abréviation de *system*, parfois utilisé par le noyau pour échanger des données avec d'autres applications fonctionnant dans le *user space* (espace utilisateur).
+Abréviation de *system*, parfois utilisé par le noyau pour échanger des données avec d'autres applications fonctionnant dans le « user space » (*espace utilisateur*, en français).
 
 ### /tmp
 
